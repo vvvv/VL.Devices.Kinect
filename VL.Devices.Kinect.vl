@@ -867,11 +867,6 @@
                 <Canvas Id="AVxfF1QYKkMNky1MtzJfK7" BordersChecked="false" CanvasType="Group" />
                 <Patch Id="Puklb7W09CxNcu0swMGHxF" Name="Create" />
                 <Patch Id="O4PLl2iFgsqNmsMvlfLcRw" Name="Update" />
-                <!--
-
-    ************************  ************************
-
--->
                 <ProcessDefinition Id="OgmbvdFoZuSLlbOR3gAtJs">
                   <Fragment Id="MUECpJiQ00fO5HQCzhJ5EZ" Patch="Puklb7W09CxNcu0swMGHxF" Enabled="true" />
                   <Fragment Id="V4mK2be3B1lQEB6Tt9TECa" Patch="O4PLl2iFgsqNmsMvlfLcRw" Enabled="true" />
@@ -891,11 +886,6 @@
                 <Canvas Id="GCNuh75NQYpNszBDOY4pL7" BordersChecked="false" CanvasType="Group" />
                 <Patch Id="OrIr7E6DUXWNDqxSlWrOLN" Name="Create" />
                 <Patch Id="Nlmo1sC4hO9MULnGA7ZFyz" Name="Update" />
-                <!--
-
-    ************************  ************************
-
--->
                 <ProcessDefinition Id="Hk3uPix5igwNB4gWIXgkOZ">
                   <Fragment Id="FWoUwKyGwovNJcAduBT5It" Patch="OrIr7E6DUXWNDqxSlWrOLN" Enabled="true" />
                   <Fragment Id="HOpojLnxqR0NlD9Ly9fsG7" Patch="Nlmo1sC4hO9MULnGA7ZFyz" Enabled="true" />
@@ -915,11 +905,6 @@
                 <Canvas Id="HuJGj9k8ZFqMGgvTakAufF" BordersChecked="false" CanvasType="Group" />
                 <Patch Id="JheAgTeSP6KNjLeLvHVced" Name="Create" />
                 <Patch Id="VcOT5Cf5SijMWGQ8xILcgM" Name="Update" />
-                <!--
-
-    ************************  ************************
-
--->
                 <ProcessDefinition Id="DmvvEIVeqDJN6Tx5kSJenP">
                   <Fragment Id="KR6moUGWBx9ND6rIPINWa6" Patch="JheAgTeSP6KNjLeLvHVced" Enabled="true" />
                   <Fragment Id="SKSTNq43ozILLL9u8SWD8j" Patch="VcOT5Cf5SijMWGQ8xILcgM" Enabled="true" />
@@ -1057,6 +1042,9 @@
           <Link Id="HK6tQRzsJUbOwN4JSiQtjq" Ids="AclrlONScGnO1KvM0x07GC,HkFvkIyqanZPTN4gyF4Iri" />
           <Link Id="J1KsHoFANQqLoS9MfGVBuH" Ids="Fu6iYnKGbysQLccTLPUt4f,FQDLswcTAKzMRm9vf29MHp" IsHidden="true" />
           <Link Id="KpoCK46kVQNQMRr0545CG9" Ids="Fk60bhIVr6XMBu01HhJ0wL,Fu6iYnKGbysQLccTLPUt4f" />
+          <Link Id="BzqxczmSgojOVOISRDIr7T" Ids="ILjlJHo6TaePlErT1ctp8Z,HSZlzcdsffUPXFWtKajjvH" />
+          <Link Id="QNpDlxAf5DHOMdMG49265x" Ids="ILjlJHo6TaePlErT1ctp8Z,BJhqRF1336tPaWpd0IMLuI" />
+          <Link Id="RupUdXwmgrnOLnMjpNrbvi" Ids="ILjlJHo6TaePlErT1ctp8Z,ADcBx1HAF4XPPQ8vxwUYhp" />
         </Patch>
       </Node>
     </Canvas>
@@ -1082,5 +1070,10 @@
     </Node>
   </Patch>
   <NugetDependency Id="G6BCNIE6y47OB8AL8YYQfn" Location="VL.Skia" Version="2019.2.0-0026-g560cab28a5" />
-  <PlatformDependency Id="QdDxMctnCG4Ny0Pd9g7tGK" Location="Microsoft.Kinect" />
+  <PlatformDependency Id="NkKGC1Bj7GUNQP2EFcsZEf" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.BackgroundRemoval.dll" />
+  <PlatformDependency Id="Auknq4YY8v1NMSVTkLEkX3" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.Controls.dll" />
+  <PlatformDependency Id="UbEcME1SA50NhkHSRs59oJ" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.dll" />
+  <PlatformDependency Id="RCqZfLYgG07Nr3x7ZoyuZN" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.Fusion.dll" />
+  <PlatformDependency Id="TE69SwyRJ3zOoM9LaoRt3k" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.Interaction.dll" />
+  <PlatformDependency Id="EF6hXFLnV5HOWqee6a6R1K" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/v1.8/Assemblies/Microsoft.Kinect.dll" />
 </Document>
