@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2019.2.0-0193-9027aa298e" Version="0.128">
+<Document xmlns:p="property" Id="OKMdY1Xjni8MSTXCjm6Gpz" LanguageVersion="2019.2.0-0193-9027aa298e" Version="0.128">
   <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0193-g9027aa298e" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -20,6 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
+            <Pin Id="IpsS6zQ7IL0QYVWJ7a4NTb" Name="Index" Kind="InputPin" />
             <Pin Id="IrteGjB0dytLSyINlGKKDl" Name="Enabled" Kind="InputPin" />
             <Pin Id="TY3bdNiILZHOdeKCbmhnuo" Name="KinectSensor" Kind="OutputPin" />
             <Pin Id="VoHxzkKHHtWMXnfn2Adb6Y" Name="Is Running" Kind="OutputPin" />
@@ -30,27 +31,6 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="331,367,145,19" Id="DJF2Ey5izRbOc5xeG8wd1W">
-            <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Skeleton" />
-            </p:NodeReference>
-            <Pin Id="FyIAHz5CIJeNLbD46uFTOh" Name="Input Kinect" Kind="InputPin" />
-            <Pin Id="GSrvvf5dAZ0NaltT3aBpcA" Name="Tracking Mode" Kind="InputPin" />
-            <Pin Id="J9yAiDhu2sPQKFUjzlrG9M" Name="JointPosition" Kind="OutputPin" />
-            <Pin Id="LOmlw2QIyUgLSxDEto1CSn" Name="Joint From" Kind="OutputPin" />
-            <Pin Id="HvIyMJE6OPfQEE8a5iiHE9" Name="JointTo" Kind="OutputPin" />
-            <Pin Id="MGVHRqQgoyHNYhSiBYdUvE" Name="skeletons" Kind="OutputPin" />
-            <Pin Id="KVtydVhoWe3Mf7yofgdxhl" Name="Count" Kind="OutputPin" />
-            <Pin Id="I31p9oFJkpANo5HnmpevyT" Name="clipped" Kind="OutputPin" />
-            <Pin Id="I0uTsoHZKUnP9BLUC4jnp0" Name="Tracking Id" Kind="OutputPin" />
-            <Pin Id="My66LZrg512Qc8SgiOYNfN" Name="Position" Kind="OutputPin" />
-            <Pin Id="TxOG4pcZwbhP39WQWgDF5E" Name="Enable Skeleton" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-          </Node>
           <Pad Id="R186YGQK0bDMKm0ftiPI5D" Comment="Count" Bounds="413,409,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="331,425,85,19" Id="Doy4B53gQvPPA0ZZFWDm0J">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastSymbolSource="VL.Skia3d.vl">
@@ -125,7 +105,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="AzHH45I7NhULIRyAT4bc7I" Name="Bounds" Kind="InputPin" DefaultValue="1157, 287, 600, 400">
+            <Pin Id="AzHH45I7NhULIRyAT4bc7I" Name="Bounds" Kind="InputPin" DefaultValue="1150, 368, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -163,6 +143,7 @@
             <Pin Id="KQONJdum0TLLV4cW00ZROc" Name="Input" Kind="InputPin" />
             <Pin Id="Swi6cpjZpJzPIRlYxe3BpG" Name="Input 2" Kind="InputPin" />
             <Pin Id="A61cJKKlspwPbj8PSRU15b" Name="Output" Kind="OutputPin" />
+            <Pin Id="P7bn52BpJWJPQMlayYPyRB" Name="Input 3" Kind="InputPin" />
           </Node>
           <Node Bounds="171,478,35,19" Id="CVDsonNm5TRP20ba4B6DP1">
             <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="CoreLibBasics.vl">
@@ -173,6 +154,21 @@
             <Pin Id="VrXk2SslOh2MYhd4QZgu0e" Name="Input" Kind="StateInputPin" />
             <Pin Id="MQUElTDrpMEPJszoRGYIOA" Name="Size" Kind="OutputPin" />
           </Node>
+          <Node Bounds="331,364,145,19" Id="IxXOI67JvaeLmPUjTuueXD">
+            <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Skeleton" />
+            </p:NodeReference>
+            <Pin Id="HlhuqRBUnkqOjbhyv70NQn" Name="Input Kinect" Kind="InputPin" />
+            <Pin Id="AjQFejAdhhMLxeZW9Oun0Z" Name="Tracking Mode" Kind="InputPin" />
+            <Pin Id="A1i48UWARhiOcZioLWrP99" Name="JointPosition" Kind="OutputPin" />
+            <Pin Id="D2E5nNwnwIrOKN3bV8zC4r" Name="Count" Kind="OutputPin" />
+            <Pin Id="U012Ov3VLTfOKHaYrpJWYF" Name="Tracking Id" Kind="OutputPin" />
+            <Pin Id="SHoqTXfJZN7M5CpbEMWPAW" Name="Position" Kind="OutputPin" />
+          </Node>
+          <Pad Id="L8lzBpJTQaiQRgRVNkOoWC" Comment="Is Running" Bounds="354,286,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VueqTVAia08PmexrotIaPZ" Comment="Status" Bounds="519,284,126,15" ShowValueBox="true" isIOBox="true" />
+          <ControlPoint Id="BB2WtO1S5M3MOppAtl6M6E" Bounds="312,451" />
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -181,12 +177,9 @@
           <Fragment Id="DfmSNg5hyLHLzdFhxmY8xo" Patch="E8EhmnPcyV3OuzWMEg1JEj" Enabled="true" />
         </ProcessDefinition>
         <Link Id="UPwQbWvbPk1MXX06s2LxZB" Ids="BX3NIMfynaENRN5KPno6hs,IrteGjB0dytLSyINlGKKDl" />
-        <Link Id="IlvVkRn7p8hMa1i8yTgix8" Ids="TY3bdNiILZHOdeKCbmhnuo,FyIAHz5CIJeNLbD46uFTOh" />
-        <Link Id="VScgJzoxdMSNpgdhlhMH9Y" Ids="KVtydVhoWe3Mf7yofgdxhl,R186YGQK0bDMKm0ftiPI5D" />
-        <Link Id="EjJOOlPuavWPSptVzSEbH8" Ids="J9yAiDhu2sPQKFUjzlrG9M,UopPdzXMBPwLobQZcDY941" />
         <Link Id="JOMWAMOIyidO5oUdoLWmQd" Ids="SJcinL4TDMINUxBtlc6Siy,KuuUwBXnyBwQOrhBpHpRud" />
         <Link Id="GAzOazD9I9BMRngiEdJin2" Ids="AKWxirnYSTSLi1MyppCQkh,M8JVV0Sy5KnP7n1ee2c4c3" />
-        <Link Id="Pe83VhNT5OmPeBB6YYfIiQ" Ids="TY3bdNiILZHOdeKCbmhnuo,TQCVShCwcqsPHJDndQLhnd" />
+        <Link Id="Pe83VhNT5OmPeBB6YYfIiQ" Ids="TY3bdNiILZHOdeKCbmhnuo,BB2WtO1S5M3MOppAtl6M6E,TQCVShCwcqsPHJDndQLhnd" />
         <Link Id="Tgwga5DFSjdMP53WQXlx4I" Ids="ODHoGBPxn1UPS4Pi5uBWXK,Fjkjwa0dKOnLSEywXOOZ81" />
         <Link Id="G0N8W9FcBILMzlO7IU3Lgx" Ids="SQCbSp1ys5tL39K5mWRsAl,G1gfThCel7SNddhhSBeN4H" />
         <Link Id="KSYOv1P6WPPLqH85UtzJtP" Ids="RBoULEfdqWHQbrtwLPunMh,FrX0iaMnHu6Plnj3n3N5R9" />
@@ -197,6 +190,11 @@
         <Link Id="JEM23LdgHc6OfOxHtJtWyJ" Ids="I65lDrXdoZsLmQ8KE6ZCFE,VrXk2SslOh2MYhd4QZgu0e" />
         <Link Id="TUT7LsAEKWqMAUQhzvMW2x" Ids="MQUElTDrpMEPJszoRGYIOA,V1TWfFzoJASLQ72R1ar5zl" />
         <Link Id="HECiFok0ThlOLCK3M1zRKG" Ids="GhKFcpVI0IcLvnfdzveuR3,Swi6cpjZpJzPIRlYxe3BpG" />
+        <Link Id="TV1Wlv6uHfTLmIKDxI6OhU" Ids="TY3bdNiILZHOdeKCbmhnuo,HlhuqRBUnkqOjbhyv70NQn" />
+        <Link Id="VMZlADZ9popPYlKFbS7hUp" Ids="A1i48UWARhiOcZioLWrP99,UopPdzXMBPwLobQZcDY941" />
+        <Link Id="LqrnGSofdjMQN7qoeirDcI" Ids="D2E5nNwnwIrOKN3bV8zC4r,R186YGQK0bDMKm0ftiPI5D" />
+        <Link Id="OsrtdujTd6sNjSVZYXWZEy" Ids="VoHxzkKHHtWMXnfn2Adb6Y,L8lzBpJTQaiQRgRVNkOoWC" />
+        <Link Id="NaFXTPKTcvINnsDksCE9HF" Ids="R5KKXuffSthOyOZ8Qohlo4,VueqTVAia08PmexrotIaPZ" />
       </Patch>
     </Node>
   </Patch>
