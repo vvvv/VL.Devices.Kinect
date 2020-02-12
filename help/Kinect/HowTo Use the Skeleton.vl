@@ -31,8 +31,8 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="R186YGQK0bDMKm0ftiPI5D" Comment="Count" Bounds="413,409,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="331,425,85,19" Id="Doy4B53gQvPPA0ZZFWDm0J">
+          <Pad Id="R186YGQK0bDMKm0ftiPI5D" Comment="Count" Bounds="481,405,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="338,538,85,19" Id="Doy4B53gQvPPA0ZZFWDm0J">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points" />
@@ -56,7 +56,7 @@
             <Pin Id="UopPdzXMBPwLobQZcDY941" Name="Input" Kind="StateInputPin" />
             <Pin Id="SJcinL4TDMINUxBtlc6Siy" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="331,522,145,19" Id="UQVlT8J1oAGLPFSib1D51D">
+          <Node Bounds="338,635,145,19" Id="UQVlT8J1oAGLPFSib1D51D">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Transform" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Camera (FOV)" />
@@ -66,7 +66,7 @@
             <Pin Id="V1TWfFzoJASLQ72R1ar5zl" Name="Scaling" Kind="InputPin" />
             <Pin Id="GhKFcpVI0IcLvnfdzveuR3" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="401,456,35,19" Id="EOPn0JFc5vzMClTFib9kIT">
+          <Node Bounds="408,569,35,19" Id="EOPn0JFc5vzMClTFib9kIT">
             <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FOV" />
@@ -162,6 +162,7 @@
             <Pin Id="HlhuqRBUnkqOjbhyv70NQn" Name="Input Kinect" Kind="InputPin" />
             <Pin Id="AjQFejAdhhMLxeZW9Oun0Z" Name="Tracking Mode" Kind="InputPin" />
             <Pin Id="A1i48UWARhiOcZioLWrP99" Name="JointPosition" Kind="OutputPin" />
+            <Pin Id="Fgy5x3SUTbKLFBCWw5hcTm" Name="Joint Tracking State" Kind="OutputPin" />
             <Pin Id="D2E5nNwnwIrOKN3bV8zC4r" Name="Count" Kind="OutputPin" />
             <Pin Id="U012Ov3VLTfOKHaYrpJWYF" Name="Tracking Id" Kind="OutputPin" />
             <Pin Id="SHoqTXfJZN7M5CpbEMWPAW" Name="Position" Kind="OutputPin" />
@@ -320,7 +321,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="QAVx9VCskgZPbQU874uxIR" Name="Bounds" Kind="InputPin" DefaultValue="-12, 27, 600, 400">
+            <Pin Id="QAVx9VCskgZPbQU874uxIR" Name="Bounds" Kind="InputPin" DefaultValue="1040, 128, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>

@@ -1008,7 +1008,7 @@
                         <Pin Id="UptqfxYCh4mNsnB6T04XFj" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="E01IVE4EhClLsM6XoXt3y2" Name="Tracking Id" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="-861,2258,1360,394" Id="KXR4xqTcZKjOZb8wvl3za4">
+                      <Node Bounds="-861,2258,1360,418" Id="KXR4xqTcZKjOZb8wvl3za4">
                         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                           <CategoryReference Kind="Category" Name="Primitive" />
@@ -1154,12 +1154,23 @@
                             <Pin Id="U5Nh4V1WMniPLG90oUQNoO" Name="Z" Kind="InputPin" />
                             <Pin Id="O7zzhasG9iJMPolvVIEhDg" Name="Output" Kind="StateOutputPin" />
                           </Node>
+                          <Node Bounds="-706,2414,78,26" Id="CNGE9QuqOVoNcdz2zVJHq6">
+                            <p:NodeReference LastCategoryFullName="Microsoft.Kinect.Joint" LastSymbolSource="Microsoft.Kinect.dll">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <Choice Kind="OperationCallFlag" Name="TrackingState" />
+                              <CategoryReference Kind="AssemblyCategory" Name="Joint" NeedsToBeDirectParent="true" />
+                            </p:NodeReference>
+                            <Pin Id="ESmAbwPRDhdLQ0oUNMsmgf" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="PqFa8dcQmx1PEfXWcAJxTr" Name="Output" Kind="StateOutputPin" />
+                            <Pin Id="Lc710gonQeBOe87SyFyvuy" Name="Tracking State" Kind="OutputPin" />
+                          </Node>
                         </Patch>
                         <ControlPoint Id="SkQJelsI7azOSsYyOLSCny" Bounds="-780,2647" Alignment="Bottom" />
                         <Pin Id="MbIA4h5lDYnNFLxWbkHtjS" Name="Iteration Count" Kind="InputPin" />
                         <Pin Id="HrcEIwMxY8lPmckc0fGuKE" Name="Break" Kind="OutputPin" />
                         <ControlPoint Id="O6FMGS73bv9PMQaqsDWRyJ" Bounds="181,2647" Alignment="Bottom" />
                         <ControlPoint Id="DhE5QjEemJYMzKnkKH1PbC" Bounds="422,2647" Alignment="Bottom" />
+                        <ControlPoint Id="TDeHyzR7UIsQdhDhAAeyEW" Bounds="-634,2670" Alignment="Bottom" />
                       </Node>
                       <Node Bounds="-836,2153,68,26" Id="QSLUp4F1bH8NTDYs6GKFII">
                         <p:NodeReference LastCategoryFullName="Microsoft.Kinect.JointCollection" LastSymbolSource="Microsoft.Kinect.dll">
@@ -1272,6 +1283,7 @@
                     <ControlPoint Id="LOlbWwdXQxNPXWwtAJHujo" Bounds="1009,2666" Alignment="Bottom" />
                     <ControlPoint Id="JPcHFfSv31OMlSVPNi66uS" Bounds="183,2666" Alignment="Bottom" />
                     <ControlPoint Id="HoIY6FEgl8ELxEtbEVQ9d6" Bounds="422,2666" Alignment="Bottom" />
+                    <ControlPoint Id="RGZwmSB2IvlNj6MAHFPK5o" Bounds="-633,2690" Alignment="Bottom" />
                   </Node>
                   <ControlPoint Id="KsHhtCGod6rLQjRJ2WwGDG" Bounds="1570,2796" />
                   <Node Bounds="720,211,130,26" Id="NE3gb1GKW88PLGxKLfsvCh">
@@ -1359,6 +1371,16 @@
                   <Pad Id="IL7MSAho5EhOsRevAEk3Kh" Comment="Joint From" Bounds="185,2732,126,38" ShowValueBox="true" isIOBox="true" />
                   <Pad Id="QxOs0GhAsNgPGCdG9siphC" Comment="Joint To " Bounds="423,2733,289,38" ShowValueBox="true" isIOBox="true" />
                   <ControlPoint Id="DcgNJiTZnTqL7A5AlSnNBO" Bounds="905,652" />
+                  <ControlPoint Id="AylHY8JmcvRLbqcwXho7tS" Bounds="-634,2765" />
+                  <Pad Id="Eiaz9b9MpT1PipKYsD3jHS" Bounds="-532,2764,130,19" ShowValueBox="true" isIOBox="true" Value="//todo clean this up">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                    <p:ValueBoxSettings>
+                      <p:fontsize p:Type="Int32">9</p:fontsize>
+                      <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                    </p:ValueBoxSettings>
+                  </Pad>
                 </Canvas>
                 <Patch Id="JheAgTeSP6KNjLeLvHVced" Name="Create" />
                 <Patch Id="VcOT5Cf5SijMWGQ8xILcgM" Name="Update">
@@ -1368,6 +1390,7 @@
                   <Pin Id="GRoUXSAGjm7Ncf8fBcR3qS" Name="Tracking Id" Kind="OutputPin" />
                   <Pin Id="SP3deVs71l6QE1MGRegIUX" Name="JointPosition" Kind="OutputPin" />
                   <Pin Id="DLFm2rzdjiTNORT3UOrjWR" Name="Tracking Mode" Kind="InputPin" />
+                  <Pin Id="DQfEvYroNcYPxiFfiZtrXW" Name="Joint Tracking State" Kind="OutputPin" />
                 </Patch>
                 <ProcessDefinition Id="DmvvEIVeqDJN6Tx5kSJenP">
                   <Fragment Id="KR6moUGWBx9ND6rIPINWa6" Patch="JheAgTeSP6KNjLeLvHVced" Enabled="true" />
@@ -1486,6 +1509,11 @@
                 <Link Id="EpmoFcWyMGSLe4z1f3Zrxt" Ids="SihJMF3WdFBOu6ZKNutDHc,BXlKl8luFv2LMIQKJ9SHIs" />
                 <Link Id="Fz9KpYpp7cEMcwCt46j6GX" Ids="SCguoD8jgGNN5onL543kWi,KA8HX3dX39tNepm8NbwwYg" />
                 <Link Id="RKvRSxfJG8fNMmGideVFga" Ids="D68OEQEzPWKNXX8Jn1YT67,Ikd78DdAEiENg49kGqAcvJ" />
+                <Link Id="EJBeQ6UKGShLxcDiJ6mWS6" Ids="TDeHyzR7UIsQdhDhAAeyEW,RGZwmSB2IvlNj6MAHFPK5o" />
+                <Link Id="IT7YD5ziglSPIBDIcZHbGV" Ids="CH6X2lkQffuMIBkYUD0DMJ,ESmAbwPRDhdLQ0oUNMsmgf" />
+                <Link Id="QqIG1hnvcgEMVYg6nKJv95" Ids="Lc710gonQeBOe87SyFyvuy,TDeHyzR7UIsQdhDhAAeyEW" />
+                <Link Id="Bwh1gzybD1EL8DO3YXZ3UT" Ids="AylHY8JmcvRLbqcwXho7tS,DQfEvYroNcYPxiFfiZtrXW" IsHidden="true" />
+                <Link Id="KLKdcLOb4mQMYQrnM30xdZ" Ids="RGZwmSB2IvlNj6MAHFPK5o,AylHY8JmcvRLbqcwXho7tS" />
               </Patch>
             </Node>
             <ControlPoint Id="IXLD01bIPPePcUkXBxa2X6" Bounds="966,471" />
@@ -1805,4 +1833,5 @@
   <PlatformDependency Id="RCqZfLYgG07Nr3x7ZoyuZN" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.Fusion.dll" />
   <PlatformDependency Id="TE69SwyRJ3zOoM9LaoRt3k" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/Developer Toolkit v1.8.0/Assemblies/Microsoft.Kinect.Toolkit.Interaction.dll" />
   <PlatformDependency Id="EF6hXFLnV5HOWqee6a6R1K" Location="../../../../../../Program Files/Microsoft SDKs/Kinect/v1.8/Assemblies/Microsoft.Kinect.dll" />
+  <PlatformDependency Id="QGwQeDON7HYMsCmgzwswus" Location="./lib/Microsoft.Kinect.Toolkit.FaceTracking.dll" />
 </Document>
