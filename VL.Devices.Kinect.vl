@@ -634,7 +634,7 @@
                     <Pin Id="UH6b0vTI1LyOQPWpoqD5td" Name="Original Format" Kind="InputPin" />
                     <Pin Id="UCCWxosze3TLE46lZSOkJC" Name="Result" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="431,1080,222,124" Id="CZcj7ED1XwKLHLmDLJsIkf">
+                  <Node Bounds="431,1079,199,124" Id="CZcj7ED1XwKLHLmDLJsIkf">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -655,20 +655,20 @@
                         <Pin Id="AKa8TgYhiW0PRIpQTkYNbN" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="JaeR5nYgDs5PydgG84nNZT" Name="Depth" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="542,1103,77,26" Id="BumoytfXyOCQO8WAVXnSK5">
+                      <Node Bounds="539,1102,77,26" Id="KYbfXdkUOocNH1YPzjZuYK">
                         <p:NodeReference LastCategoryFullName="Microsoft.Kinect.DepthImagePixel" LastSymbolSource="Microsoft.Kinect.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="PlayerIndex" />
                           <CategoryReference Kind="AssemblyCategory" Name="DepthImagePixel" NeedsToBeDirectParent="true" />
                         </p:NodeReference>
-                        <Pin Id="C2wrDwgfkF5OGsoPUFBkF9" Name="Input" Kind="StateInputPin" />
-                        <Pin Id="Pv9kHQW62EnMYdL2PeTvBC" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="M4oKAklRFUPPozqwT9ADmC" Name="Player Index" Kind="OutputPin" />
+                        <Pin Id="DRg2T3kH4nOMsA3ti8i3kf" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="DReS8Jnlh4IMeoCDKgp2dR" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Bp07cRebpFHO9SVQGfOb5M" Name="Player Index" Kind="OutputPin" />
                       </Node>
                     </Patch>
                     <ControlPoint Id="L9LFzuNzY2bPaCRXxJqqZR" Bounds="445,1086" Alignment="Top" />
                     <ControlPoint Id="VIeK7gh04qHPfJrVmPEWvl" Bounds="517,1198" Alignment="Bottom" />
-                    <ControlPoint Id="DWrM9fdAxFkOwbg0LJ8M3t" Bounds="616,1198" Alignment="Bottom" />
+                    <ControlPoint Id="GyoYeLxtkD1PqiZX6ui6Lt" Bounds="613,1198" Alignment="Bottom" />
                   </Node>
                   <ControlPoint Id="AwRF0ajMUcZPP07FdxxMwk" Bounds="517,1309" />
                   <ControlPoint Id="KCNsjWfH4LFQBa8l2zcKjG" Bounds="437,74" />
@@ -732,7 +732,6 @@
                     </p:TypeAnnotation>
                   </Pad>
                   <Pad Id="MRhR669g7DMLTXEeqjMKLT" SlotId="SCFk0QKqk7hLuTSXKx2EJq" Bounds="847,680" />
-                  <ControlPoint Id="LmubqcuucH4P99pw7jWCK8" Bounds="615,1307" />
                   <Pad Id="QMjd4ZMc9dHPcjNvaMIaNZ" SlotId="Gz5DCXOkXMhPE9HP7AqYpr" Bounds="809,1215" />
                   <Pad Id="QoVcQpQTneiOvyfNCs6jA8" SlotId="CHjgdqCtEe0QL94JH4CvOx" Bounds="437,121" />
                   <Pad Id="DXz6QQ3WLaJNK2PRVfoDA3" SlotId="CHjgdqCtEe0QL94JH4CvOx" Bounds="185,122" />
@@ -802,14 +801,32 @@
                       </Node>
                     </Patch>
                   </Node>
+                  <Node Bounds="910,744,31,26" Id="AkbKpbcjrpqOUUCzShiRF7">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="S0IUWnsrQc5QGSdkLsgX3V" Name="Break" Kind="OutputPin" />
+                    <Patch Id="HEvYYzMYnhUL8689hNQcv6" ManuallySortedPins="true">
+                      <Patch Id="PTOzxM64d8uQbV75BfvsSc" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="VEe7POW25qNMmwbkTa7NnP" Name="Update" ManuallySortedPins="true" />
+                      <Patch Id="Kx1ermaiEj1Ljs3s1OQ0S1" Name="Dispose" ManuallySortedPins="true" />
+                    </Patch>
+                    <ControlPoint Id="NqAEVgpBQFKOEZDURMp1o4" Bounds="924,750" Alignment="Top" />
+                    <ControlPoint Id="QWo22I4SwyCMcIhy5MbqaX" Bounds="924,763" Alignment="Bottom" />
+                  </Node>
+                  <ControlPoint Id="Gi8quC1bkUrPxBuXSclYxm" Bounds="926,803" />
+                  <ControlPoint Id="CsWOTjtIvbWMMRcklDbCFS" Bounds="614,1310" />
                 </Canvas>
                 <Patch Id="OrIr7E6DUXWNDqxSlWrOLN" Name="Create" ParticipatingElements="FoMaTLYat3uOugAAvoqLen" />
                 <Patch Id="Nlmo1sC4hO9MULnGA7ZFyz" Name="Update">
                   <Pin Id="TlMxBosWvj8PFVpZPnQWQ3" Name="Depth" Kind="OutputPin" />
                   <Pin Id="CSqhSY6ZPZgOZevuT4G3yK" Name="RawDepth" Kind="OutputPin" />
                   <Pin Id="M7Ty7Qf4VxpNvjHoo1ObEJ" Name="Input Kinect" Kind="InputPin" />
-                  <Pin Id="I9vAt8TCcMXMeRbDIUVOD3" Name="Player Index" Kind="OutputPin" />
                   <Pin Id="EuZKy1m8ezaMQEcn7XiWam" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="QDgNfPjujrvQb16GJYjfzg" Name="Kinect Depth Image" Kind="OutputPin" />
+                  <Pin Id="NsAfWaBXpCLLesv1ihN08m" Name="Player Index" Kind="OutputPin" />
                 </Patch>
                 <ProcessDefinition Id="Hk3uPix5igwNB4gWIXgkOZ">
                   <Fragment Id="FWoUwKyGwovNJcAduBT5It" Patch="OrIr7E6DUXWNDqxSlWrOLN" Enabled="true" />
@@ -848,12 +865,8 @@
                 <Link Id="BVgEqu5pVxHO91kgMXyK2I" Ids="MRhR669g7DMLTXEeqjMKLT,BHooUq58bFuNatNYBHFgFr" />
                 <Link Id="FeeH4kPeDJPQAXn9oQ0BjD" Ids="HCl9merEbdEO7bCirnoO4D,CwqwpeuUE3nOefpN3Y0fSN" />
                 <Link Id="B0vCJUxPXXGLpnzeoj8tlK" Ids="VIeK7gh04qHPfJrVmPEWvl,AwRF0ajMUcZPP07FdxxMwk" />
-                <Link Id="JOJ40ooUXpfOPVGfLT7TSp" Ids="L9LFzuNzY2bPaCRXxJqqZR,C2wrDwgfkF5OGsoPUFBkF9" />
-                <Link Id="QwVYWxBmx2uOGijwVi7cyL" Ids="LmubqcuucH4P99pw7jWCK8,I9vAt8TCcMXMeRbDIUVOD3" IsHidden="true" />
-                <Link Id="G03XZIINf1XMnlgdNXDX9W" Ids="DWrM9fdAxFkOwbg0LJ8M3t,LmubqcuucH4P99pw7jWCK8" />
                 <Link Id="I6gSsiuHyAbOWYoKREYhLh" Ids="QMjd4ZMc9dHPcjNvaMIaNZ,OYnGJnLXZnSMfMvdwKzeGf" />
                 <Slot Id="Gz5DCXOkXMhPE9HP7AqYpr" Name="img" />
-                <Link Id="HV0AVpLZZDpMO1VQktVvO5" Ids="M4oKAklRFUPPozqwT9ADmC,DWrM9fdAxFkOwbg0LJ8M3t" />
                 <Link Id="M2Kp0ubORpbMy6iNUsgsNc" Ids="QoVcQpQTneiOvyfNCs6jA8,K6UAQMLArivM7jTKu5c1Vh" />
                 <Slot Id="CHjgdqCtEe0QL94JH4CvOx" Name="kinect" />
                 <Link Id="Ce9ckYOJuQeOgtLJpekjMs" Ids="DXz6QQ3WLaJNK2PRVfoDA3,QY4pTnMqHy8Qdh5gkIhDI3" />
@@ -868,6 +881,14 @@
                 <Link Id="GyuusAm3c6kNElDtVFUmay" Ids="SasNWZSg77WL1kelYyruel,HJe8Nc1CSc6LN5aZcn2KX7" />
                 <Link Id="TDxOOoA2BKKOkZXhvVDcJa" Ids="GMlpjIVVtPKQJAeLifzXD8,NoU5qcEmzYgMPtSO7Ot2mn" />
                 <Link Id="QG6odblOeQ2Nbo9rAbOz95" Ids="Vv8OyiPCkv7Oi0b3eRwqAx,MjfQm2WfL1iMZnRvNGlKW5" />
+                <Link Id="TmHaXQUoPNkNbO0BoL0t43" Ids="MRhR669g7DMLTXEeqjMKLT,NqAEVgpBQFKOEZDURMp1o4" />
+                <Link Id="NAMcmGZmj0CNH4Z3KJfLil" Ids="NqAEVgpBQFKOEZDURMp1o4,QWo22I4SwyCMcIhy5MbqaX" />
+                <Link Id="I2KcM9lm9kbOAhjwLt1A8U" Ids="Gi8quC1bkUrPxBuXSclYxm,QDgNfPjujrvQb16GJYjfzg" IsHidden="true" />
+                <Link Id="GujVYLhWyUtOmcWmvj8qCq" Ids="QWo22I4SwyCMcIhy5MbqaX,Gi8quC1bkUrPxBuXSclYxm" />
+                <Link Id="Adv15Q19JIFOmjLUxjs0Y7" Ids="L9LFzuNzY2bPaCRXxJqqZR,DRg2T3kH4nOMsA3ti8i3kf" />
+                <Link Id="LZ1HhiOnwR6Olyldp8gxvI" Ids="Bp07cRebpFHO9SVQGfOb5M,GyoYeLxtkD1PqiZX6ui6Lt" />
+                <Link Id="AwEXRWaxjCqLCtnZqqRNrw" Ids="CsWOTjtIvbWMMRcklDbCFS,NsAfWaBXpCLLesv1ihN08m" IsHidden="true" />
+                <Link Id="Fijvy2hVlhVLxB5H5x6Wvo" Ids="GyoYeLxtkD1PqiZX6ui6Lt,CsWOTjtIvbWMMRcklDbCFS" />
               </Patch>
             </Node>
             <!--
@@ -1656,6 +1677,7 @@
                     <Pin Id="GUV6dhfIy0WLoBoV5mHKtn" Name="Result" Kind="OutputPin" />
                     <Pin Id="A8kr5NkeK4gPnwhDN60yWW" Name="Unchanged" Kind="OutputPin" />
                   </Node>
+                  <ControlPoint Id="Kbs1WsU0KAELFHGKAIsjHj" Bounds="40,838" />
                 </Canvas>
                 <Patch Id="JheAgTeSP6KNjLeLvHVced" Name="Create" />
                 <Patch Id="VcOT5Cf5SijMWGQ8xILcgM" Name="Update">
@@ -1666,6 +1688,7 @@
                   <Pin Id="SP3deVs71l6QE1MGRegIUX" Name="JointPosition" Kind="OutputPin" />
                   <Pin Id="DLFm2rzdjiTNORT3UOrjWR" Name="Tracking Mode" Kind="InputPin" />
                   <Pin Id="IZpR1J6tz8ZNWJjw4Axayg" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="BLxrKXosdbNN8YMhOpO6W5" Name="Skeleton Stream" Kind="OutputPin" />
                 </Patch>
                 <ProcessDefinition Id="DmvvEIVeqDJN6Tx5kSJenP">
                   <Fragment Id="KR6moUGWBx9ND6rIPINWa6" Patch="JheAgTeSP6KNjLeLvHVced" Enabled="true" />
@@ -1803,6 +1826,8 @@
                 <Link Id="ULeVFNqPiSYOwfGOtLSiKt" Ids="GUV6dhfIy0WLoBoV5mHKtn,VRBANtpn2vOOW1scXhjnWc" />
                 <Link Id="CFCgDoDQqAvPQKq2GGgrQy" Ids="OA7LfsajMgNOLiXq636Qvw,VWcIbwNAv9xNKSbhTPei2u" />
                 <Link Id="CG6odVs5u5rLhKk5OQ8Spi" Ids="SY0QF5yZEb9PPUTLMe7NPk,OadmZq3AYOaLUJWLb11jn1" />
+                <Link Id="SuFScjEhVx8OK4Q6egZaeD" Ids="Kbs1WsU0KAELFHGKAIsjHj,BLxrKXosdbNN8YMhOpO6W5" IsHidden="true" />
+                <Link Id="NtOLiLP46S1OCJJuRHBGlA" Ids="HHcOSqcwC8wOHBHNJfJZbW,Kbs1WsU0KAELFHGKAIsjHj" />
               </Patch>
             </Node>
             <ControlPoint Id="IXLD01bIPPePcUkXBxa2X6" Bounds="966,471" />
