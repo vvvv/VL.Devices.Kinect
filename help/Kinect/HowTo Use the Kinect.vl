@@ -83,6 +83,7 @@
               <Choice Kind="ProcessAppFlag" Name="RGB" />
             </p:NodeReference>
             <Pin Id="E8pdJuL38JsQGtGvneNaa1" Name="Input Kinect" Kind="InputPin" />
+            <Pin Id="Lw7DtmbbMJYMAXG0IfGWX7" Name="Enabled" Kind="InputPin" />
             <Pin Id="RBoULEfdqWHQbrtwLPunMh" Name="Color" Kind="OutputPin" />
           </Node>
           <Pad Id="VQtk6M4IjWqLtNkIQjYOIJ" Comment="Size" Bounds="127,396,35,28" ShowValueBox="true" isIOBox="true" Value="1, 2">
@@ -92,16 +93,6 @@
           </Pad>
           <Pad Id="L8lzBpJTQaiQRgRVNkOoWC" Comment="Is Running" Bounds="354,286,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="VueqTVAia08PmexrotIaPZ" Comment="Status" Bounds="519,284,126,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="281,356,44,19" Id="O9WlgJl3pK9NRHCQSw5ZFQ">
-            <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Depth" />
-            </p:NodeReference>
-            <Pin Id="Ehe8cKimsURQSIvm7YW6Ej" Name="Input Kinect" Kind="InputPin" />
-            <Pin Id="EcFd0OvNSoPPVG3UsLXA3T" Name="RawDepth" Kind="OutputPin" />
-            <Pin Id="DZ5ESxNSbqKOQULuBfXWQY" Name="Player Index" Kind="OutputPin" />
-            <Pin Id="MO3XarS3pfVOgg7N4KQwxk" Name="Depth" Kind="OutputPin" />
-          </Node>
           <Node Bounds="281,415,125,19" Id="CqjUpggm822Ou2JOUjum1L">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -334,6 +325,27 @@
             <Pin Id="BJZ6HN7rV73MLfIJ5NC3gk" Name="Enabled" Kind="InputPin" />
             <Pin Id="UlsyvhMsgocL3nU0UCfOxG" Name="Output" Kind="OutputPin" />
           </Node>
+          <Node Bounds="534,368" Id="RsECs3h4d3NMvQccmSBqDX">
+            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Max" />
+              <FullNameCategoryReference ID="Collections.Sequence" />
+            </p:NodeReference>
+            <Pin Id="Q6viWFYVIzRNxWVXfl1OMU" Name="Input" Kind="StateInputPin" />
+            <Pin Id="REuWrGSqWp2M1MjYyQCFW0" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Ad948VBUDzRN8Ond7kREEz" Comment="" Bounds="1087,260,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="282,346,45,19" Id="FjWsnqGPN0QQaTftcMrCO8">
+            <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Depth" />
+            </p:NodeReference>
+            <Pin Id="AudUgkWi8SoMZbms1fKLDu" Name="Input Kinect" Kind="InputPin" />
+            <Pin Id="HjLNw2Lmoq8PGXgu1a5MXr" Name="Enabled" Kind="InputPin" />
+            <Pin Id="ApFMHvJYJi9PrlvnMmzPP2" Name="RawDepth" Kind="OutputPin" />
+            <Pin Id="EsguuOKVNqsLex2VhIvqY2" Name="Player Index" Kind="OutputPin" />
+            <Pin Id="S0xViwzsRdxNA8RfpDsxq2" Name="Depth" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -348,10 +360,8 @@
         <Link Id="A4z8DhQT2zKNxiagt3GbO4" Ids="TY3bdNiILZHOdeKCbmhnuo,E8pdJuL38JsQGtGvneNaa1" />
         <Link Id="OsrtdujTd6sNjSVZYXWZEy" Ids="VoHxzkKHHtWMXnfn2Adb6Y,L8lzBpJTQaiQRgRVNkOoWC" />
         <Link Id="NaFXTPKTcvINnsDksCE9HF" Ids="R5KKXuffSthOyOZ8Qohlo4,VueqTVAia08PmexrotIaPZ" />
-        <Link Id="QR6zYzixd2APnQhLQLEVgh" Ids="TY3bdNiILZHOdeKCbmhnuo,Ehe8cKimsURQSIvm7YW6Ej" />
         <Link Id="BC6ymaWTNQxLE7D4ifhoIJ" Ids="Q9JG9PvlXXsNb9PBe6IHgr,G3GPvAslcdBLgBcQEBnW10" />
         <Link Id="GcnpEhtNngiOQYVxgraPS5" Ids="QkxJygb2K2EQAucXUBYxGN,Bytqpz28my3PHR6pMsf6PQ" />
-        <Link Id="VPgCCrC6MK4LzVxLuWNjtj" Ids="MO3XarS3pfVOgg7N4KQwxk,RqUDM0yu4bnNH3P2bjdrca" />
         <Link Id="NxShmBpc1L6PrJhua1wR5t" Ids="IUImX7c3XfCOZE1t3Z3m9M,RGUuIQCbOgDOUDIDiwkkcw" />
         <Link Id="Fej7WUURrJwPRYwPZioJIB" Ids="B310CSVmH46Nkv2jsbWREC,DURaP0f2Se9OLQW2tIf2F9" />
         <Link Id="L6UbZcQglrEQLBraTGSqbp" Ids="Tbn6cd8MvkROiF7RCX2Hbh,MUj51nlmuvsMl1wSG8c4tR" IsHidden="true" />
@@ -370,9 +380,13 @@
         <Link Id="IKvkOR0TbwyQW602P9ieG3" Ids="D0K9zvK2e30LWjktNVii9d,DMq4CJclHhyNRCR7zKDQQt" />
         <Link Id="JWxfP7bTSZAPhXBtJS60XB" Ids="DMq4CJclHhyNRCR7zKDQQt,NYt9eLQlLnrLkFvvFu33CX" />
         <Link Id="HGJIOZnAJqiL6fBGVe49wL" Ids="UlsyvhMsgocL3nU0UCfOxG,MAoG0SUi83TQc28XBHyGPI" />
-        <Link Id="Cdep7dzduj0MGa4Oz9lTrn" Ids="DZ5ESxNSbqKOQULuBfXWQY,VnhdN3umqInOzjxe7Y6ckJ" />
         <Link Id="H3y2MjjN2MlOCG1pYMLYvR" Ids="VnhdN3umqInOzjxe7Y6ckJ,J5E5W8gyzbDLPlDsqMvysG" />
         <Link Id="ANlXDgI307tM9u8afIpuqD" Ids="SDAyJHEkLfdMrEydbhqDum,As2s4UU5yW3P4xOxOG2l7l" />
+        <Link Id="I0blQ7JrVOyNB1AaUAXmWq" Ids="REuWrGSqWp2M1MjYyQCFW0,Ad948VBUDzRN8Ond7kREEz" />
+        <Link Id="Liz1D4IDF37NjHvlzebgUL" Ids="TY3bdNiILZHOdeKCbmhnuo,AudUgkWi8SoMZbms1fKLDu" />
+        <Link Id="Jd0jpZgdbuDPL87orHvaTd" Ids="EsguuOKVNqsLex2VhIvqY2,Q6viWFYVIzRNxWVXfl1OMU" />
+        <Link Id="SKdZg8vV5pvPzN4J401pzM" Ids="EsguuOKVNqsLex2VhIvqY2,VnhdN3umqInOzjxe7Y6ckJ" />
+        <Link Id="SNYfisP7CGsQOc81f8P6j3" Ids="S0xViwzsRdxNA8RfpDsxq2,RqUDM0yu4bnNH3P2bjdrca" />
       </Patch>
     </Node>
   </Patch>
