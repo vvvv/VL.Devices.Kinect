@@ -1525,7 +1525,7 @@
                     <ControlPoint Id="FGvEBSBVD5DM2AZwIea9tS" Bounds="632,1511" Alignment="Bottom" />
                   </Node>
                   <ControlPoint Id="QMWYu01EJxPPiE3iRjz0Ca" Bounds="1319,2817" />
-                  <ControlPoint Id="JQZFPwWOS1BOOgOHdWljgO" Bounds="-604,2926" />
+                  <ControlPoint Id="JQZFPwWOS1BOOgOHdWljgO" Bounds="-704,2955" />
                   <Pad Id="AN3hqOmkBX4OREHs9y1SlZ" Comment="" Bounds="712,1841,35,15" ShowValueBox="true" isIOBox="true" />
                   <Pad Id="O0VzYQszz9TPBDz2R8iPy8" Comment="" Bounds="1570,2815,195,90" ShowValueBox="true" isIOBox="true" />
                   <Pad Id="V6UztqSguMPMCa8k2IocLx" Comment="" Bounds="1318,2843,35,49" ShowValueBox="true" isIOBox="true" />
@@ -1538,7 +1538,7 @@
     ************************ KinectJoint ************************
 
 -->
-                  <Node Name="KinectJoint" Bounds="-1148,2785" Id="LFHWilcJSTRMzLEVt5yory">
+                  <Node Name="KinectJoint" Bounds="-1094,2435" Id="LFHWilcJSTRMzLEVt5yory">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                       <Choice Kind="ClassDefinition" Name="Class" />
                     </p:NodeReference>
@@ -1696,15 +1696,15 @@
     ************************ KinectJointCollection ************************
 
 -->
-                  <Node Name="KinectJointCollection" Bounds="-1158,2884" Id="OufpHxIw1R4MRQCuRDOQhP">
+                  <Node Name="KinectJointCollection" Bounds="-1098,2486" Id="OufpHxIw1R4MRQCuRDOQhP">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                       <Choice Kind="ClassDefinition" Name="Class" />
                     </p:NodeReference>
                     <Patch Id="BW2tHmC860GLEWH4gO1T6j">
                       <Canvas Id="J2NBejoGf9RMEuDuB8owGK" CanvasType="Group">
-                        <Pad Id="DD7GRNmLDfZMq5xXaUkIMq" SlotId="Qdepxuf2xZvOPKgc1YEBPt" Bounds="684,956" />
-                        <ControlPoint Id="UedqRjKWMFPOWUOothivYp" Bounds="684,926" />
-                        <ControlPoint Id="OSehCJH3FO4L9UhILQ2KNL" Bounds="684,986" />
+                        <Pad Id="DD7GRNmLDfZMq5xXaUkIMq" SlotId="Qdepxuf2xZvOPKgc1YEBPt" Bounds="467,970" />
+                        <ControlPoint Id="UedqRjKWMFPOWUOothivYp" Bounds="467,940" />
+                        <ControlPoint Id="OSehCJH3FO4L9UhILQ2KNL" Bounds="467,1000" />
                         <Node Bounds="655,572,153,114" Id="Fsu2LPvA0fnPAE1C2K9MHG">
                           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -2968,11 +2968,6 @@
                         <Pad Id="EVtunqeqUgpO5UKuY1LGXa" SlotId="EyrnDjtr9EKN26h5dknwLm" Bounds="-902,1027" />
                         <Pad Id="UB7VAWoNUt5PdfO6KcUeB7" Comment="Connected Joints" Bounds="743,1943,54,15" ShowValueBox="true" isIOBox="true" />
                       </Canvas>
-                      <!--
-
-    ************************  ************************
-
--->
                       <ProcessDefinition Id="S0ayOG4SzsfLedljmD20n9" IsHidden="true">
                         <Fragment Id="KdanYJhEyqAQCgnMOnmspd" Patch="RUbJEx9R9PROE1ZTBDHPmF" Enabled="true" />
                         <Fragment Id="TyPwqljGsf3LnXLo92Z2zN" Patch="V2UDz6szdbdM98uE43GsfV" Enabled="true" />
@@ -3261,7 +3256,6 @@
                     <Pin Id="NBYUhZXNTcHMq9AfOYgSRc" Name="Output" Kind="StateOutputPin" />
                   </Node>
                   <Pad Id="LifUbALP67ZOON1NRdlTZa" Comment="" Bounds="-700,3022,114,57" ShowValueBox="true" isIOBox="true" />
-                  <Pad Id="GwixZzYdw4FNiN1Gx16kTF" Comment="" Bounds="-371,2810,500,1534" ShowValueBox="true" isIOBox="true" />
                 </Canvas>
                 <Patch Id="JheAgTeSP6KNjLeLvHVced" Name="Create" />
                 <Patch Id="VcOT5Cf5SijMWGQ8xILcgM" Name="Update">
@@ -3269,7 +3263,7 @@
                   <Pin Id="NRQmUhmVlMyM7j1RHIzr82" Name="Count" Kind="OutputPin" />
                   <Pin Id="GOy2IbgBwD6O035HSFdro4" Name="Position" Kind="OutputPin" />
                   <Pin Id="GRoUXSAGjm7Ncf8fBcR3qS" Name="Tracking Id" Kind="OutputPin" />
-                  <Pin Id="SP3deVs71l6QE1MGRegIUX" Name="JointPosition" Kind="OutputPin" />
+                  <Pin Id="SP3deVs71l6QE1MGRegIUX" Name="JointCollection" Kind="OutputPin" />
                   <Pin Id="DLFm2rzdjiTNORT3UOrjWR" Name="Tracking Mode" Kind="InputPin" />
                   <Pin Id="IZpR1J6tz8ZNWJjw4Axayg" Name="Enabled" Kind="InputPin" />
                 </Patch>
@@ -3411,7 +3405,6 @@
                 <Link Id="VO0kjUIg7nmOYl49fyfFDB" Ids="Mxo3XuK0Ef4Psi5bhjIwXk,Qkt6AALia2tOmXqhe8E3qe" />
                 <Link Id="QDAm3rGJNbSNxjgCOxVCrB" Ids="NBYUhZXNTcHMq9AfOYgSRc,JQZFPwWOS1BOOgOHdWljgO" />
                 <Link Id="GuX6XWZPDVTPWidTNr9735" Ids="NBYUhZXNTcHMq9AfOYgSRc,LifUbALP67ZOON1NRdlTZa" />
-                <Link Id="E4Jl92tcdDqNrx24urfpHG" Ids="NBYUhZXNTcHMq9AfOYgSRc,GwixZzYdw4FNiN1Gx16kTF" />
               </Patch>
             </Node>
             <ControlPoint Id="IXLD01bIPPePcUkXBxa2X6" Bounds="966,471" />
