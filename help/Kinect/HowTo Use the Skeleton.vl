@@ -66,7 +66,11 @@
               <Choice Kind="ProcessAppFlag" Name="RGB" />
             </p:NodeReference>
             <Pin Id="E8pdJuL38JsQGtGvneNaa1" Name="Input Kinect" Kind="InputPin" />
-            <Pin Id="GW2yPjoRxNELHzECuENgFc" Name="Enabled" Kind="InputPin" />
+            <Pin Id="GW2yPjoRxNELHzECuENgFc" Name="Enabled" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="RBoULEfdqWHQbrtwLPunMh" Name="Color" Kind="OutputPin" />
           </Node>
           <Node Bounds="444,964,65,19" Id="N4LcgJRBAigNK9Uiba4K2Y">
@@ -88,7 +92,11 @@
             </p:NodeReference>
             <Pin Id="HlhuqRBUnkqOjbhyv70NQn" Name="Input Kinect" Kind="InputPin" />
             <Pin Id="AjQFejAdhhMLxeZW9Oun0Z" Name="Tracking Mode" Kind="InputPin" />
-            <Pin Id="Cj3EnwEK5LLN8kDmSHT6uc" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Cj3EnwEK5LLN8kDmSHT6uc" Name="Enabled" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="A1i48UWARhiOcZioLWrP99" Name="JointCollection" Kind="OutputPin" />
             <Pin Id="D2E5nNwnwIrOKN3bV8zC4r" Name="Count" Kind="OutputPin" />
             <Pin Id="U012Ov3VLTfOKHaYrpJWYF" Name="Tracking Id" Kind="OutputPin" />
@@ -154,7 +162,7 @@
             </p:NodeReference>
             <Pin Id="AHCdpQaeG0sOZDEtJiOZQi" Name="Input" Kind="StateInputPin" />
             <Pin Id="IWo3s3WklohM2tL3fgmOYx" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="E1oPikR7AzyO41wIR0z8xA" Name="Tracked Positions" Kind="OutputPin" />
+            <Pin Id="E1oPikR7AzyO41wIR0z8xA" Name="Inferred Positions" Kind="OutputPin" />
           </Node>
           <Node Bounds="315,516" Id="BkMzY3oDdsiN2XZ624VFyw">
             <p:NodeReference LastCategoryFullName="Main.Kinect.Skeleton.KinectJointCollection" LastSymbolSource="VL.Devices.Kinect.vl">
