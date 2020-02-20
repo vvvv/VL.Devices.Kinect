@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2019.2.0-0211-186df433f9" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0211-g186df433f9" />
+<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2019.2.0-0236-52759e123e" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0236-g52759e123e" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -26,7 +26,7 @@
             <Pin Id="VoHxzkKHHtWMXnfn2Adb6Y" Name="Is Running" Kind="OutputPin" />
             <Pin Id="R5KKXuffSthOyOZ8Qohlo4" Name="Status" Kind="OutputPin" />
           </Node>
-          <Pad Id="BX3NIMfynaENRN5KPno6hs" Comment="Enabled" Bounds="212,165,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="BX3NIMfynaENRN5KPno6hs" Comment="Enabled" Bounds="212,165,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -61,7 +61,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="AzHH45I7NhULIRyAT4bc7I" Name="Bounds" Kind="InputPin" DefaultValue="394, 341, 600, 400">
+            <Pin Id="AzHH45I7NhULIRyAT4bc7I" Name="Bounds" Kind="InputPin" DefaultValue="745, 130, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -83,7 +83,6 @@
               <Choice Kind="ProcessAppFlag" Name="RGB" />
             </p:NodeReference>
             <Pin Id="E8pdJuL38JsQGtGvneNaa1" Name="Input Kinect" Kind="InputPin" />
-            <Pin Id="Lw7DtmbbMJYMAXG0IfGWX7" Name="Enabled" Kind="InputPin" />
             <Pin Id="RBoULEfdqWHQbrtwLPunMh" Name="Color" Kind="OutputPin" />
           </Node>
           <Pad Id="VQtk6M4IjWqLtNkIQjYOIJ" Comment="Size" Bounds="127,396,35,28" ShowValueBox="true" isIOBox="true" Value="1, 2">
@@ -128,7 +127,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="EwDp06uPww5PiMooqQprSo" Name="Bounds" Kind="InputPin" DefaultValue="134, 62, 600, 400">
+            <Pin Id="EwDp06uPww5PiMooqQprSo" Name="Bounds" Kind="InputPin" DefaultValue="132, 60, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -150,12 +149,45 @@
               <Choice Kind="ProcessAppFlag" Name="Depth" />
             </p:NodeReference>
             <Pin Id="AudUgkWi8SoMZbms1fKLDu" Name="Input Kinect" Kind="InputPin" />
-            <Pin Id="HjLNw2Lmoq8PGXgu1a5MXr" Name="Enabled" Kind="InputPin" />
             <Pin Id="ApFMHvJYJi9PrlvnMmzPP2" Name="RawDepth" Kind="OutputPin" />
             <Pin Id="JSaaxLN4XD9M5mauzVpPv7" Name="Player Index" Kind="OutputPin" />
             <Pin Id="S0xViwzsRdxNA8RfpDsxq2" Name="Depth" Kind="OutputPin" />
             <Pin Id="EJkkXt6II8dN8UP2i6ZOpz" Name="Kinect Depth Image" Kind="OutputPin" />
           </Node>
+          <Node Bounds="873,104,85,19" Id="QTSSEgp0fsvOMPIkVhh3Ka">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Kinect2" />
+            </p:NodeReference>
+            <Pin Id="T6spAahH1N7M0lRSH2yQax" Name="Index" Kind="InputPin" />
+            <Pin Id="NgFd2uBMiT0N3NRN40A4DG" Name="Output" Kind="OutputPin" />
+            <Pin Id="D1zxQO8h65WMQBAsVaS1Xk" Name="Color Image" Kind="OutputPin" />
+            <Pin Id="LLiOAEQMNMIPTXHQnqekNR" Name="Depth Image" Kind="OutputPin" />
+            <Pin Id="JaDgCUy6ZruLZfTA5LoSZn" Name="RawDepth" Kind="OutputPin" />
+            <Pin Id="PxpHknLwPymLz4N1Is4YTX" Name="PlayerIDs" Kind="OutputPin" />
+            <Pin Id="NcH0PCKateEQCz2DVrfppr" Name="Skeletons" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="856,162,89,26" Id="I3PL0xbj2m9O2I6GUIuX7I">
+            <p:NodeReference LastCategoryFullName="Main.Kinect2" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Kinect2" />
+              <Choice Kind="OperationCallFlag" Name="GetColorImages" />
+            </p:NodeReference>
+            <Pin Id="Qs67tQGmLp3LlMdW4Ef4l3" Name="Input" Kind="StateInputPin" />
+            <Pin Id="EYx6CeGNBjVOv100buy6hu" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Lj1BeO6JZaDOwJevUjGjut" Name="Color Image" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="914,233,65,19" Id="IZaTjbq4sT5PiZgWtFyRNo">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="BrAX8TCpY1UOXPjChI9eKN" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="IMCbCZZ9op2PNFTkENarDA" Name="Reset" Kind="InputPin" />
+            <Pin Id="BBXD9fM888OM2ouTZpMG9e" Name="Value" Kind="OutputPin" />
+            <Pin Id="V5DKE5IIKxhMwKb8PREVIa" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="NPsMjWbgvL1OgStegF2i5y" Comment="On Data" Bounds="965,334,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -176,12 +208,15 @@
         <Link Id="Fej7WUURrJwPRYwPZioJIB" Ids="B310CSVmH46Nkv2jsbWREC,DURaP0f2Se9OLQW2tIf2F9" />
         <Link Id="Liz1D4IDF37NjHvlzebgUL" Ids="TY3bdNiILZHOdeKCbmhnuo,AudUgkWi8SoMZbms1fKLDu" />
         <Link Id="SNYfisP7CGsQOc81f8P6j3" Ids="S0xViwzsRdxNA8RfpDsxq2,RqUDM0yu4bnNH3P2bjdrca" />
+        <Link Id="UQ2zIqG6zr9NN3vLLgaVJv" Ids="Lj1BeO6JZaDOwJevUjGjut,BrAX8TCpY1UOXPjChI9eKN" />
+        <Link Id="T9Dl3o4PzdzQaYKUbdQE1T" Ids="NgFd2uBMiT0N3NRN40A4DG,Qs67tQGmLp3LlMdW4Ef4l3" />
+        <Link Id="BLuQ2LBNehFO2BOifkPOAn" Ids="V5DKE5IIKxhMwKb8PREVIa,NPsMjWbgvL1OgStegF2i5y" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0211-g186df433f9" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0236-g52759e123e" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.0.0.0" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0211-g186df433f9" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0236-g52759e123e" />
   <NugetDependency Id="PfhIaXpEVDqLLjb0dBLzbl" Location="VL.Skia3d" Version="0.0.0.0" />
   <PlatformDependency Id="RY37kBCv1egL3MFIz7WVCv" Location="../../lib/Microsoft.Kinect.Toolkit.FaceTracking.dll" />
 </Document>
