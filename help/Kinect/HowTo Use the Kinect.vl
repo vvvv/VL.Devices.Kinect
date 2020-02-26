@@ -22,10 +22,89 @@
             </p:NodeReference>
             <Pin Id="T6spAahH1N7M0lRSH2yQax" Name="Index" Kind="InputPin" />
             <Pin Id="NgFd2uBMiT0N3NRN40A4DG" Name="Output" Kind="OutputPin" />
-            <Pin Id="D1zxQO8h65WMQBAsVaS1Xk" Name="Color Image" Kind="OutputPin" />
-            <Pin Id="LLiOAEQMNMIPTXHQnqekNR" Name="Depth Image" Kind="OutputPin" />
-            <Pin Id="PxpHknLwPymLz4N1Is4YTX" Name="PlayerIDs" Kind="OutputPin" />
-            <Pin Id="NcH0PCKateEQCz2DVrfppr" Name="Skeletons" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1033,296,67,26" Id="E1X9YRA2vHiLVxa1JpXnmN">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="SOlJyD3TSOdLNAj9fbmP8l" Name="Input" Kind="InputPin" />
+            <Pin Id="AFkmaA5GikqNyJQ3py6oPw" Name="Discard Higher Bits" Kind="InputPin" />
+            <Pin Id="LxvBKonwhYBP1DmHvcazkv" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1038,352,125,19" Id="LVHqfWlBWPFPvzjeAsKjJe">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="IV0vc4JiJEvPyPbFZ7ZFVe" Name="Image" Kind="InputPin" />
+            <Pin Id="EeeCN3YjyPUN0DpmfedTw5" Name="Position" Kind="InputPin" />
+            <Pin Id="QnpJ75Ma9VyN4fLh2kqH6o" Name="Size" Kind="InputPin" />
+            <Pin Id="T00qFVCbybLPsfJeClcQ3G" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="RCYB0b9cifuNtSx4uVtMzm" Name="Anchor" Kind="InputPin" />
+            <Pin Id="KaujTcgWM5zPJow3ozQ8ux" Name="Paint" Kind="InputPin" />
+            <Pin Id="TSJ7lHlIJmHLIOnodvTDuU" Name="Enabled" Kind="InputPin" />
+            <Pin Id="M4VNTQQYOjYPffin84iRSA" Name="Output" Kind="OutputPin" />
+            <Pin Id="GhVFvBGiw6FPBzHDxtGkjE" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FwGVC5E8HkzMar7hAh4snd" Comment="Size" Bounds="1133,317,35,28" ShowValueBox="true" isIOBox="true" Value="1, 2">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="822,296,67,26" Id="SmMb7CtS46eOQ0OuaHT6lt">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="ATsoktGRYj3Plus5ZdR8Qn" Name="Input" Kind="InputPin" />
+            <Pin Id="BYtlcDUZaNiMPOaxmK1MpA" Name="Discard Higher Bits" Kind="InputPin" />
+            <Pin Id="Cnst7n1CPzYPt9eWoH23XG" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="827,352,125,19" Id="Sx65puJEUzmL8j9RjDc1uR">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="Kkg4D8gtkooLBdPaw7nQR3" Name="Image" Kind="InputPin" />
+            <Pin Id="GUcHHTzoONSMq8idtiZ5pC" Name="Position" Kind="InputPin" />
+            <Pin Id="UBcNg3BDcZtPopYWhfrN0Y" Name="Size" Kind="InputPin" />
+            <Pin Id="QUinIJNA9yHO6YcsKbBhvD" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="OlMa71VVlceP4Ex1C86D6S" Name="Anchor" Kind="InputPin" />
+            <Pin Id="MaBxSTPY9nRNiHPf27eV5M" Name="Paint" Kind="InputPin" />
+            <Pin Id="F4f3Grt7ZRsNsduuaTVxit" Name="Enabled" Kind="InputPin" />
+            <Pin Id="ORlfcI5ikC2N43pNxQf1nL" Name="Output" Kind="OutputPin" />
+            <Pin Id="St2ssxpRaxfP7AD8jd3MNf" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Pad Id="A9ST9oFaprBP6R8dhgb0a1" Comment="Size" Bounds="922,317,35,28" ShowValueBox="true" isIOBox="true" Value="1, 2">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="830,238,44,19" Id="FB9YpBFO8WLPhgENFH1Ydn">
+            <p:NodeReference LastCategoryFullName="Main.Kinect2" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Depth" />
+              <CategoryReference Kind="ClassType" Name="Kinect2" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="Dj0jbKKCbV9Nkjg8AWsHYb" Name="Kinect" Kind="InputPin" />
+            <Pin Id="OdGziitrkKPMRLNzoaMlh2" Name="RawDepth" Kind="OutputPin" />
+            <Pin Id="QvQNUQoP5gUMZRWYnBSxjx" Name="Depth" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1030,244,16,19" Id="GV57AisPfJPPGpAxATecXK">
+            <p:NodeReference LastCategoryFullName="Main.Kinect2" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RGB" />
+              <CategoryReference Kind="ClassType" Name="Kinect2" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="GBY1ib2Y6M2OmBl41xzlJe" Name="Kinect" Kind="InputPin" />
+            <Pin Id="QAmSZjZ38PENyIoRE6DdaX" Name="Color Image" Kind="OutputPin" />
           </Node>
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
@@ -34,6 +113,11 @@
           <Fragment Id="Cmcf4mHyB0EMdpDeZpxC9x" Patch="MUmaRHgpij0N2mqiJtEUkU" Enabled="true" />
           <Fragment Id="DfmSNg5hyLHLzdFhxmY8xo" Patch="E8EhmnPcyV3OuzWMEg1JEj" Enabled="true" />
         </ProcessDefinition>
+        <Link Id="JyVgLgqAN8nPujSDyS8vwx" Ids="LxvBKonwhYBP1DmHvcazkv,IV0vc4JiJEvPyPbFZ7ZFVe" />
+        <Link Id="HAHW97f1jGnOo6L78mYknX" Ids="FwGVC5E8HkzMar7hAh4snd,QnpJ75Ma9VyN4fLh2kqH6o" />
+        <Link Id="MNAnYdhzzEtL8njrd7o4su" Ids="Cnst7n1CPzYPt9eWoH23XG,Kkg4D8gtkooLBdPaw7nQR3" />
+        <Link Id="R78oefFDASQMkHsi6Edr03" Ids="A9ST9oFaprBP6R8dhgb0a1,UBcNg3BDcZtPopYWhfrN0Y" />
+        <Link Id="UFqXAxVnI0aOUz6ITIotUB" Ids="QvQNUQoP5gUMZRWYnBSxjx,ATsoktGRYj3Plus5ZdR8Qn" />
       </Patch>
     </Node>
   </Patch>
