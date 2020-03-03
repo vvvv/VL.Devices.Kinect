@@ -21,6 +21,8 @@
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
             <Pin Id="T6spAahH1N7M0lRSH2yQax" Name="Index" Kind="InputPin" />
+            <Pin Id="KqMc9vj3lDfOhSSjuoThdY" Name="Elevation Angle" Kind="InputPin" />
+            <Pin Id="Q3CsFoQGJIcPS9LFzf9dY0" Name="Skeleton Tracking Mode" Kind="InputPin" />
             <Pin Id="NgFd2uBMiT0N3NRN40A4DG" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="574,318,67,26" Id="E1X9YRA2vHiLVxa1JpXnmN">
