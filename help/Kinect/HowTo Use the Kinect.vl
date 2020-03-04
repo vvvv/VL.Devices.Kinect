@@ -15,13 +15,17 @@
       </p:NodeReference>
       <Patch Id="AWTKDThZ4wZOpPipoQFvDp">
         <Canvas Id="OxFa1i5lGTpN5Gws8t7T1C" CanvasType="Group">
-          <Node Bounds="414,126,85,19" Id="QTSSEgp0fsvOMPIkVhh3Ka">
+          <Node Bounds="492,151,85,19" Id="QTSSEgp0fsvOMPIkVhh3Ka">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
             <Pin Id="T6spAahH1N7M0lRSH2yQax" Name="Index" Kind="InputPin" />
-            <Pin Id="KqMc9vj3lDfOhSSjuoThdY" Name="Elevation Angle" Kind="InputPin" />
+            <Pin Id="KqMc9vj3lDfOhSSjuoThdY" Name="Elevation Angle" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="Q3CsFoQGJIcPS9LFzf9dY0" Name="Skeleton Tracking Mode" Kind="InputPin" />
             <Pin Id="NgFd2uBMiT0N3NRN40A4DG" Name="Output" Kind="OutputPin" />
           </Node>
@@ -160,11 +164,11 @@
         <Link Id="MNAnYdhzzEtL8njrd7o4su" Ids="Cnst7n1CPzYPt9eWoH23XG,Kkg4D8gtkooLBdPaw7nQR3" />
         <Link Id="R78oefFDASQMkHsi6Edr03" Ids="A9ST9oFaprBP6R8dhgb0a1,UBcNg3BDcZtPopYWhfrN0Y" />
         <Link Id="UFqXAxVnI0aOUz6ITIotUB" Ids="QvQNUQoP5gUMZRWYnBSxjx,ATsoktGRYj3Plus5ZdR8Qn" />
-        <Link Id="C6qbmTSCV2qLJDyw2XWwMP" Ids="NgFd2uBMiT0N3NRN40A4DG,Dj0jbKKCbV9Nkjg8AWsHYb" />
-        <Link Id="GGW6y3TkTJjM1q5R95VjGP" Ids="NgFd2uBMiT0N3NRN40A4DG,GBY1ib2Y6M2OmBl41xzlJe" />
         <Link Id="SmSUn076oKbNsD8GIcHij7" Ids="QAmSZjZ38PENyIoRE6DdaX,SOlJyD3TSOdLNAj9fbmP8l" />
         <Link Id="BhAjWD7yMqnPSgZX4SmTKY" Ids="ORlfcI5ikC2N43pNxQf1nL,DysPtja3UHFPYcNJxTM42s" />
         <Link Id="NJKiYeOxDXYPXA5sAhua6u" Ids="M4VNTQQYOjYPffin84iRSA,NavB6rHCLIuQdbyXSzT1Eq" />
+        <Link Id="FQgBNXrVRIpPfP2dssO9We" Ids="NgFd2uBMiT0N3NRN40A4DG,Dj0jbKKCbV9Nkjg8AWsHYb" />
+        <Link Id="TUcyRduryFcNvzWeKjkvb2" Ids="NgFd2uBMiT0N3NRN40A4DG,GBY1ib2Y6M2OmBl41xzlJe" />
       </Patch>
     </Node>
   </Patch>

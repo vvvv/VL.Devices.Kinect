@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
             <Pin Id="KzTr7hmUBBrL17hIUAcjq8" Name="Index" Kind="InputPin" />
-            <Pin Id="SOqISNzptwnLTfoZ5xZHta" Name="Elevation Angle" Kind="InputPin" DefaultValue="8">
+            <Pin Id="SOqISNzptwnLTfoZ5xZHta" Name="Elevation Angle" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -69,6 +69,8 @@
             <Pin Id="MLmlgQH9C6vOZtiWuWE2Qd" Name="skels" Kind="InputPin" />
             <Pin Id="Le4b2gZAjE0N5F2XosiMJv" Name="Output" Kind="OutputPin" />
             <Pin Id="EliUT4K3O3ZPnjqTnQVSod" Name="Face Rect" Kind="OutputPin" />
+            <Pin Id="OoNrG9EpYW5NegYL5dMeT4" Name="proj3dshape" Kind="OutputPin" />
+            <Pin Id="Kqr85ieQ5xqNopi9LA0Zgo" Name="triangles" Kind="OutputPin" />
           </Node>
           <Pad Id="MUT7MSU0Q2QPoO0KXVk5gs" Comment="Count" Bounds="143,259,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="KLjhLx0l3ZlPik0oQOTOIQ" Comment="Face Rect" Bounds="346,380,99,51" ShowValueBox="true" isIOBox="true" />
@@ -115,7 +117,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="H3SNh6guGliP8xKZ4IsMuw" Name="Bounds" Kind="InputPin" DefaultValue="878, 64, 600, 400">
+            <Pin Id="H3SNh6guGliP8xKZ4IsMuw" Name="Bounds" Kind="InputPin" DefaultValue="876, 64, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -288,8 +290,6 @@
           <Fragment Id="PCA386JUMDwLf3V5t4g1zm" Patch="V5IQI1FELbHLl1B1gvINdy" Enabled="true" />
           <Fragment Id="MlzRBdP4frSOqf33BmWUBh" Patch="E3fGSbH7Uh8MIP5gvOYxmw" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="CyWwr0PoL2dNOvBhSdftS9" Ids="Jwct14f3jDKQDpddao9gcK,UPI9l7ZAlkGOfRiKohclcK" />
-        <Link Id="UaJg5LAiZZMLhyt3P7l1GT" Ids="Jwct14f3jDKQDpddao9gcK,Ebz5w1yPb3CNKpx3ImMAIa" />
         <Link Id="BX3buEVj0PgQdOxpksaYlh" Ids="EohwzLfwCiuMdKZ2vBCR5z,MUT7MSU0Q2QPoO0KXVk5gs" />
         <Link Id="H53MxJif6EhMCfBXYffWXo" Ids="EliUT4K3O3ZPnjqTnQVSod,KLjhLx0l3ZlPik0oQOTOIQ" />
         <Link Id="UPegU4rcXIsNESmQ1QXZGT" Ids="MIgEEkNVvUQNIrEcrSOVW1,BF0hknNcq16QTSxk07fePW" />
@@ -313,9 +313,11 @@
         <Link Id="AYVM74Y7KDDNSGMEn2Hamb" Ids="Jwct14f3jDKQDpddao9gcK,IkfJNE0ANfXMik86pTTDNq" />
         <Link Id="THqZIOvZwXTM7XR2WxTdBC" Ids="LFAJtvE0eiNMCOsmW5gPwY,MRQ8sQTsWlsN23amfToBUc" />
         <Link Id="GXnavYjAjkaLOtWguWxxVS" Ids="KfTSY5ECVo7QGnR12KifOI,MLmlgQH9C6vOZtiWuWE2Qd" />
-        <Link Id="OaiPmSYfDk5LXqkhHTpRKr" Ids="Jwct14f3jDKQDpddao9gcK,QC0MlpzgQwaLPjOm1CHwl1" />
         <Link Id="BNla1HsLncdMqVJy4voxsS" Ids="Le4b2gZAjE0N5F2XosiMJv,RScNg1IdthhLLBzCTe2BX5" />
         <Link Id="O4vJ35UQ3StMxtYf52cF7F" Ids="BQVpJfGBknGMBceVYGIfqs,O7LSOtvGugvNeSBnKYWvcV" />
+        <Link Id="VZ9qOvLjKYbOFVA31DN2ZA" Ids="Jwct14f3jDKQDpddao9gcK,UPI9l7ZAlkGOfRiKohclcK" />
+        <Link Id="S6HsOJw0UJIMsij9BMQ9nb" Ids="Jwct14f3jDKQDpddao9gcK,Ebz5w1yPb3CNKpx3ImMAIa" />
+        <Link Id="GGkYMtuyHGBN5LJraHM7PS" Ids="Jwct14f3jDKQDpddao9gcK,QC0MlpzgQwaLPjOm1CHwl1" />
       </Patch>
     </Node>
   </Patch>
