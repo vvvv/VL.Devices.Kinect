@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OKMdY1Xjni8MSTXCjm6Gpz" LanguageVersion="2019.2.0-0236-52759e123e" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0236-g52759e123e" />
+<Document xmlns:p="property" Id="OKMdY1Xjni8MSTXCjm6Gpz" LanguageVersion="2019.2.0-0314-d4039e4adc" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0314-gd4039e4adc" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,8 +20,8 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
-            <Pin Id="RfTTNYHxYyeOscLUc437kD" Name="Value" Kind="InputPin" />
             <Pin Id="R9EQuezEhcrN5djZ538AzC" Name="Index" Kind="InputPin" />
+            <Pin Id="IzNUHJh2aYULt3BQoWa2io" Name="Elevation Angle" Kind="InputPin" />
             <Pin Id="DRejk0XP9zAPAXqea51cxC" Name="Skeleton Tracking Mode" Kind="InputPin" />
             <Pin Id="MQUFGwtmVBOQJUTNqJRSkH" Name="Output" Kind="StateOutputPin" />
           </Node>
@@ -35,6 +35,7 @@
             <Pin Id="DBbyF2Ph2EWL7WWqOl6Uj1" Name="Count" Kind="OutputPin" />
             <Pin Id="PWEG2dEYFcEM5gBTLOSETf" Name="Tracking Ids" Kind="OutputPin" />
             <Pin Id="SlTTsMPaDAcPAXBwLycPoO" Name="Skeleton Positions" Kind="OutputPin" />
+            <Pin Id="FMsDwZoCNuaMjcZWUrsbs0" Name="tracked skeletons" Kind="OutputPin" />
           </Node>
           <Node Bounds="80,251,35,19" Id="SF2g3XVVZzJMD3BdwAJ7FB">
             <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
@@ -273,7 +274,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="I7gXpFtFdUtLjmMxdpxJZS" Name="Bounds" Kind="InputPin" DefaultValue="156, 84, 1056, 664">
+            <Pin Id="I7gXpFtFdUtLjmMxdpxJZS" Name="Bounds" Kind="InputPin" DefaultValue="24, 168, 1056, 664">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -432,11 +433,6 @@
             <Pin Id="GVrVpxYplcbQHsTc0oMoM2" Name="Color FOV" Kind="OutputPin" />
             <Pin Id="UBYnmaO4dIDLnnxHtrK1JH" Name="Depth FOV" Kind="OutputPin" />
           </Node>
-          <Pad Id="M5G8QFgET87NceJuzOvyMB" Comment="Skeleton Tracking Mode" Bounds="885,-22,61,15" ShowValueBox="true" isIOBox="true" Value="Default">
-            <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
-              <Choice Kind="TypeFlag" Name="SkeletonTrackingMode" />
-            </p:TypeAnnotation>
-          </Pad>
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -500,12 +496,11 @@
         <Link Id="Sb9Ey9TWvRNLpPF11C7DAg" Ids="GVrVpxYplcbQHsTc0oMoM2,I2EN084ChurOnIpg0ycFUv" />
         <Link Id="Syo1W8uMI6VPLJiVKvdgiw" Ids="GVrVpxYplcbQHsTc0oMoM2,SboMJ8WH9BoM7Hjb7jVWiU" />
         <Link Id="HWU3aej5yL1QTlZVqUnla5" Ids="GVrVpxYplcbQHsTc0oMoM2,G62faxrXmosPoJI9ZShRCj" />
-        <Link Id="QJVS0V6dl0DMZqD5iVOREJ" Ids="M5G8QFgET87NceJuzOvyMB,DRejk0XP9zAPAXqea51cxC" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0236-g52759e123e" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0314-gd4039e4adc" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.0.0.0" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0236-g52759e123e" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0314-gd4039e4adc" />
   <NugetDependency Id="K5cdkp8zAgDNE5PyP4c7Da" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>

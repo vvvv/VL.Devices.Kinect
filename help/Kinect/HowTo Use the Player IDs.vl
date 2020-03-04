@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2019.2.0-0236-52759e123e" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0236-g52759e123e" />
+<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2019.2.0-0314-d4039e4adc" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0314-gd4039e4adc" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,20 +15,6 @@
       </p:NodeReference>
       <Patch Id="AWTKDThZ4wZOpPipoQFvDp">
         <Canvas Id="OxFa1i5lGTpN5Gws8t7T1C" CanvasType="Group">
-          <Node Bounds="716,218,50,19" Id="CWWx5t9PVCAOc626WyAR0f">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Kinect" />
-            </p:NodeReference>
-            <Pin Id="QiFgSVI5XR6L80432rSERw" Name="Index" Kind="InputPin" />
-            <Pin Id="FPQSSaXFOKbPg6QfrlRIDK" Name="Value" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="Se3t5xgQffkPtrpXgm4cWm" Name="Skeleton Tracking Mode" Kind="InputPin" />
-            <Pin Id="VvYrTZ2xW9tPyTUSRC6s7y" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Node Bounds="784,462,85,26" Id="InCLa5VC3JeOWVmhtPB01H">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -332,6 +318,20 @@
             <Pin Id="CbHRpg8jB9ZLAth1oEokZQ" Name="Input 2" Kind="InputPin" />
             <Pin Id="Oz4ry1dJzS7OEPKPUnBLJ4" Name="Output" Kind="OutputPin" />
           </Node>
+          <Node Bounds="721,180" Id="NSB1sSbiJVwNZwXwXdxt5j">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Kinect" />
+            </p:NodeReference>
+            <Pin Id="IWqiskfKeCtNV2PaqRUeud" Name="Index" Kind="InputPin" />
+            <Pin Id="ANvw6CTB1ATL3mn4L2Ouwr" Name="Elevation Angle" Kind="InputPin" />
+            <Pin Id="GzzFc9xOlE8OpNbtmpd3vM" Name="Skeleton Tracking Mode" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
+                <Choice Kind="TypeFlag" Name="SkeletonTrackingMode" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="S9unqkC7sT3Pqav6vUhIMS" Name="Output" Kind="StateOutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -357,26 +357,26 @@
         <Link Id="Hd7fhVYGoE4Pn7lBpxJnAz" Ids="Jhps2tBdyObP0h20VHJSMt,EUk23Z9SdD6Nf7B9q3zozo" />
         <Link Id="SJGnC5gag8yOXqixL22DhN" Ids="Jhps2tBdyObP0h20VHJSMt,QG4ecq467DsOs0k0ERmHJJ" />
         <Link Id="MFUz3OHVbjbL23tpD46tw7" Ids="SqaoCM05O8IOiBrm1uUYud,CnfuhfjvzegMdnsLkUj31w" />
-        <Link Id="BpqNGTVZab1MYoiP1yeKuh" Ids="VvYrTZ2xW9tPyTUSRC6s7y,UT3cRYHVBd4LP3iCHu0Igz" />
         <Link Id="I6tlbeZbcfhNHgcDolCVmV" Ids="MesNzoryp6xQICopBDnNYl,BeY40JSpEe3QZ3zZ4qS3Rb" />
         <Link Id="EJESwzEZhK6PkQLmidXFN6" Ids="MIl6bsNtxorMNsuKiNlVcG,UNdc7xECtgJNxkCqHMbJ8y" />
         <Link Id="TJullAhfYQwMjuJe6OyDg5" Ids="UK2TNi3W7ItLP8FNX9XSdM,EpQLkye3FHSPQP7t3eCepU" />
         <Link Id="ReCkbswPh5xLIgYULVsC1g" Ids="Jhps2tBdyObP0h20VHJSMt,ENHNWXeABZwMGjiVVUCUI6" />
         <Link Id="F4yQvZghTWUOMA7XnPToWC" Ids="UirOR1Loh0WOHMahkoY6IX,Kl2AoYGr3zNPlAAxgVJ1vC" />
         <Link Id="MiZtXGw1ixEQNVoypLI6MK" Ids="UGMq8NwIFhSNeLtY7x6sJ8,CySUXPW4nh1PTb0SYUO50i" />
-        <Link Id="P6fyFkrpBM1MU7NrYabbaf" Ids="VvYrTZ2xW9tPyTUSRC6s7y,TodVlfN2godMNy6yr7u5Lr" />
         <Link Id="HfDGIRkBoneOursZn22zFX" Ids="OwnnJ1CFxipN1vQ1m5DutM,Onk1cMF4b2zMFeoqQoqs0I" />
         <Link Id="S7OvvEmLIu1MbnLiYAffjt" Ids="AFD1PbeIVScPhCUlIx2caS,H9DJZmixB8cMDIclbe1JLm" />
         <Link Id="O1Ck1Lx2aGvPd9zWiuz1XA" Ids="A5OCIpsQcf8LELA3xqu9nP,LVzQblNFexlPwKqzAUB3oK" />
         <Link Id="FT7bnWxXwwKO9M3OcBtHAA" Ids="UjtFuMlXKU1MKYJdWFFgQp,IyaBN6BEbvKO4sA48ohXXI" />
         <Link Id="VljY01iIRTuNcALCHDOEfg" Ids="GkIw77qrkMtPHsqZAPfrih,CbHRpg8jB9ZLAth1oEokZQ" />
         <Link Id="V4XlHvTebiHNLKYpDMHqa8" Ids="Oz4ry1dJzS7OEPKPUnBLJ4,VtF3qzLGeoBL2we70RH2iS" />
+        <Link Id="J3Ub9SiPwq3O77Uvscd0CW" Ids="S9unqkC7sT3Pqav6vUhIMS,TodVlfN2godMNy6yr7u5Lr" />
+        <Link Id="KBTTHJWPYDiMTxJVPv2aZr" Ids="S9unqkC7sT3Pqav6vUhIMS,UT3cRYHVBd4LP3iCHu0Igz" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0236-g52759e123e" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0314-gd4039e4adc" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.0.0.0" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0236-g52759e123e" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0314-gd4039e4adc" />
   <NugetDependency Id="PfhIaXpEVDqLLjb0dBLzbl" Location="VL.Skia3d" Version="0.0.0.0" />
   <PlatformDependency Id="RY37kBCv1egL3MFIz7WVCv" Location="../../lib/Microsoft.Kinect.Toolkit.FaceTracking.dll" />
 </Document>
