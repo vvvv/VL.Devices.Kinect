@@ -332,6 +332,15 @@
             </Pin>
             <Pin Id="S9unqkC7sT3Pqav6vUhIMS" Name="Output" Kind="StateOutputPin" />
           </Node>
+          <Node Bounds="754,372" Id="JQCVi5VFhXrLeLWnnSX60s">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromSequence" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="QyqVSjQ0JRGNUhN8owsRsR" Name="Input" Kind="StateInputPin" />
+            <Pin Id="IoDBPQoRkGTPOX1dTNq4Av" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -354,7 +363,7 @@
         <Link Id="KadACOWrSJQMmrSInxtj0t" Ids="OQ5sCDbTE1rNdjRL6dmjwo,VGqeDbm3NAONnuEapPfnzV" />
         <Link Id="NxHCDZJzs54MYHLZltXIdo" Ids="VGqeDbm3NAONnuEapPfnzV,FrCPofTHhEyOQIxI0HMcDK" />
         <Link Id="KDfhT1hc9CNNum1dPNLQ8r" Ids="UGkMgogfhsaO4oyBQo9cCb,RVqYDozqygiNVfI4cXCYD0" />
-        <Link Id="Hd7fhVYGoE4Pn7lBpxJnAz" Ids="Jhps2tBdyObP0h20VHJSMt,EUk23Z9SdD6Nf7B9q3zozo" />
+        <Link Id="Hd7fhVYGoE4Pn7lBpxJnAz" Ids="Jhps2tBdyObP0h20VHJSMt,QyqVSjQ0JRGNUhN8owsRsR" />
         <Link Id="SJGnC5gag8yOXqixL22DhN" Ids="Jhps2tBdyObP0h20VHJSMt,QG4ecq467DsOs0k0ERmHJJ" />
         <Link Id="MFUz3OHVbjbL23tpD46tw7" Ids="SqaoCM05O8IOiBrm1uUYud,CnfuhfjvzegMdnsLkUj31w" />
         <Link Id="I6tlbeZbcfhNHgcDolCVmV" Ids="MesNzoryp6xQICopBDnNYl,BeY40JSpEe3QZ3zZ4qS3Rb" />
@@ -371,6 +380,7 @@
         <Link Id="V4XlHvTebiHNLKYpDMHqa8" Ids="Oz4ry1dJzS7OEPKPUnBLJ4,VtF3qzLGeoBL2we70RH2iS" />
         <Link Id="J3Ub9SiPwq3O77Uvscd0CW" Ids="S9unqkC7sT3Pqav6vUhIMS,TodVlfN2godMNy6yr7u5Lr" />
         <Link Id="KBTTHJWPYDiMTxJVPv2aZr" Ids="S9unqkC7sT3Pqav6vUhIMS,UT3cRYHVBd4LP3iCHu0Igz" />
+        <Link Id="V2sWvhw7fUwMiU8rzuOW87" Ids="IoDBPQoRkGTPOX1dTNq4Av,EUk23Z9SdD6Nf7B9q3zozo" />
       </Patch>
     </Node>
   </Patch>

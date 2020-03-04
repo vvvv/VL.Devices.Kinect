@@ -74,7 +74,11 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="ATsoktGRYj3Plus5ZdR8Qn" Name="Input" Kind="InputPin" />
-            <Pin Id="BYtlcDUZaNiMPOaxmK1MpA" Name="Discard Higher Bits" Kind="InputPin" />
+            <Pin Id="BYtlcDUZaNiMPOaxmK1MpA" Name="Discard Higher Bits" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="Cnst7n1CPzYPt9eWoH23XG" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="368,374,125,19" Id="Sx65puJEUzmL8j9RjDc1uR">
@@ -110,7 +114,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="GAx45ZfYmWKOn1QcsZJeAS" Name="Bounds" Kind="InputPin" DefaultValue="-747, 294, 704, 564">
+            <Pin Id="GAx45ZfYmWKOn1QcsZJeAS" Name="Bounds" Kind="InputPin" DefaultValue="-770, 293, 704, 564">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -120,7 +124,11 @@
             <Pin Id="PYIRG9rpscAMFwADvjmPlX" Name="Clear" Kind="InputPin" />
             <Pin Id="F9GISc8ydCtO1ly7Iq4w1s" Name="Space" Kind="InputPin" />
             <Pin Id="PH1BqHoRoGdMprYeVqoKIq" Name="Show Cursor" Kind="InputPin" />
-            <Pin Id="Vo1raRcX2a8NrYGfGPS4fc" Name="VSync" Kind="InputPin" />
+            <Pin Id="Vo1raRcX2a8NrYGfGPS4fc" Name="VSync" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="RTSESjBA2NcOGNWQNJ1413" Name="Enabled" Kind="InputPin" />
             <Pin Id="Q6531auONlmO0TkFQfO8fk" Name="Form" Kind="OutputPin" />
             <Pin Id="AKzGYjFEM2vQAiyPujvrcq" Name="ClientBounds" Kind="OutputPin" />
@@ -131,7 +139,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="LrEgtYNaN5IMKVY3uRkivs" Name="Bounds" Kind="InputPin" DefaultValue="-775, -283, 768, 580">
+            <Pin Id="LrEgtYNaN5IMKVY3uRkivs" Name="Bounds" Kind="InputPin" DefaultValue="-772, -280, 768, 580">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -141,7 +149,11 @@
             <Pin Id="JZ59j4SBKwkNqfMumNKZls" Name="Clear" Kind="InputPin" />
             <Pin Id="DSQtHBzeADvNZl7phNl4Z1" Name="Space" Kind="InputPin" />
             <Pin Id="N18QU3c92nHPJjxb56RLeb" Name="Show Cursor" Kind="InputPin" />
-            <Pin Id="CSN64mXUu3sMLpQYyMfYOd" Name="VSync" Kind="InputPin" />
+            <Pin Id="CSN64mXUu3sMLpQYyMfYOd" Name="VSync" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="Up7Qvj7tEOuNDWam0dtgZU" Name="Enabled" Kind="InputPin" />
             <Pin Id="NUR7OK92swcL2P7x9YTG94" Name="Form" Kind="OutputPin" />
             <Pin Id="HpfE1qwmdY6N8Rf38Wmlmp" Name="ClientBounds" Kind="OutputPin" />
@@ -153,7 +165,6 @@
               <Choice Kind="ProcessAppFlag" Name="Depth" />
             </p:NodeReference>
             <Pin Id="SlIpzlo3JHPMV6Ojtvg6zT" Name="Kinect" Kind="InputPin" />
-            <Pin Id="FE2YxmKecfsPKWok0Y1hzW" Name="RawDepth" Kind="OutputPin" />
             <Pin Id="SFmlBQiLsMnNYPBNqVK6w8" Name="Depth" Kind="OutputPin" />
           </Node>
         </Canvas>
