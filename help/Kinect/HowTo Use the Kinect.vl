@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="AWTKDThZ4wZOpPipoQFvDp">
         <Canvas Id="OxFa1i5lGTpN5Gws8t7T1C" CanvasType="Group">
-          <Node Bounds="492,151,85,19" Id="QTSSEgp0fsvOMPIkVhh3Ka">
+          <Node Bounds="479,161,85,19" Id="QTSSEgp0fsvOMPIkVhh3Ka">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
@@ -92,7 +92,11 @@
             <Pin Id="QUinIJNA9yHO6YcsKbBhvD" Name="Size Mode" Kind="InputPin" />
             <Pin Id="OlMa71VVlceP4Ex1C86D6S" Name="Anchor" Kind="InputPin" />
             <Pin Id="MaBxSTPY9nRNiHPf27eV5M" Name="Paint" Kind="InputPin" />
-            <Pin Id="F4f3Grt7ZRsNsduuaTVxit" Name="Enabled" Kind="InputPin" />
+            <Pin Id="F4f3Grt7ZRsNsduuaTVxit" Name="Enabled" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="ORlfcI5ikC2N43pNxQf1nL" Name="Output" Kind="OutputPin" />
             <Pin Id="St2ssxpRaxfP7AD8jd3MNf" Name="Actual Bounds" Kind="OutputPin" />
           </Node>
@@ -114,7 +118,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="GAx45ZfYmWKOn1QcsZJeAS" Name="Bounds" Kind="InputPin" DefaultValue="-770, 293, 704, 564">
+            <Pin Id="GAx45ZfYmWKOn1QcsZJeAS" Name="Bounds" Kind="InputPin" DefaultValue="689, 60, 704, 564">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -139,7 +143,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="LrEgtYNaN5IMKVY3uRkivs" Name="Bounds" Kind="InputPin" DefaultValue="-772, -280, 768, 580">
+            <Pin Id="LrEgtYNaN5IMKVY3uRkivs" Name="Bounds" Kind="InputPin" DefaultValue="644, 288, 768, 580">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>

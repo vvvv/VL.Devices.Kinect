@@ -31,11 +31,10 @@
               <Choice Kind="ProcessAppFlag" Name="Skeleton" />
             </p:NodeReference>
             <Pin Id="UqB2eEoFBUTMtkoXg4RejX" Name="Kinect" Kind="InputPin" />
-            <Pin Id="HCrWIYoNisDNFojYI8i4HG" Name="Joints" Kind="OutputPin" />
             <Pin Id="DBbyF2Ph2EWL7WWqOl6Uj1" Name="Count" Kind="OutputPin" />
             <Pin Id="PWEG2dEYFcEM5gBTLOSETf" Name="Tracking Ids" Kind="OutputPin" />
             <Pin Id="SlTTsMPaDAcPAXBwLycPoO" Name="Skeleton Positions" Kind="OutputPin" />
-            <Pin Id="FMsDwZoCNuaMjcZWUrsbs0" Name="tracked skeletons" Kind="OutputPin" />
+            <Pin Id="HCrWIYoNisDNFojYI8i4HG" Name="Joints" Kind="OutputPin" />
           </Node>
           <Node Bounds="80,251,35,19" Id="SF2g3XVVZzJMD3BdwAJ7FB">
             <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
@@ -104,7 +103,7 @@
               <Patch Id="VnfCE5xSOCwOufEz0RN4Ee" Name="Update" ManuallySortedPins="true" />
               <Patch Id="AktYqDxlKlhMg6xvpIOl9I" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="1132,575,93,26" Id="SMcxhQEzSbOOXbJQJ3R7HD">
-                <p:NodeReference LastCategoryFullName="Main.Kinect.Skeleton.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
+                <p:NodeReference LastCategoryFullName="Main.Kinect.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetJointPositions" />
                 </p:NodeReference>
@@ -114,7 +113,7 @@
                 <Pin Id="HirZTVXJmYaLbPPLpF7z63" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="560,583,59,26" Id="NMNV0KoHrMmPd6BTpfx7W1">
-                <p:NodeReference LastCategoryFullName="Main.Kinect.Skeleton.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
+                <p:NodeReference LastCategoryFullName="Main.Kinect.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetBones" />
                 </p:NodeReference>
@@ -124,7 +123,7 @@
                 <Pin Id="LxE8tTqvikHPMRnG6ld4Va" Name="Bones" Kind="OutputPin" />
               </Node>
               <Node Bounds="1309,570,93,26" Id="JLeaeku0OPxPaMRplVfnF6">
-                <p:NodeReference LastCategoryFullName="Main.Kinect.Skeleton.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
+                <p:NodeReference LastCategoryFullName="Main.Kinect.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetJointPositions" />
                 </p:NodeReference>
@@ -134,7 +133,7 @@
                 <Pin Id="LaaYnAQ9icdNSP0J50LPTw" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="805,578,59,26" Id="HMZwPNVhvyDOrvwXmfAmjP">
-                <p:NodeReference LastCategoryFullName="Main.Kinect.Skeleton.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
+                <p:NodeReference LastCategoryFullName="Main.Kinect.Joints" LastSymbolSource="VL.Devices.Kinect.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetBones" />
                 </p:NodeReference>
@@ -274,7 +273,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="I7gXpFtFdUtLjmMxdpxJZS" Name="Bounds" Kind="InputPin" DefaultValue="24, 168, 1056, 664">
+            <Pin Id="I7gXpFtFdUtLjmMxdpxJZS" Name="Bounds" Kind="InputPin" DefaultValue="208, 129, 1056, 664">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -423,7 +422,7 @@
               <Choice Kind="TypeFlag" Name="JointTrackingState" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VtUSwy9u4d7LNbQri8i2di" Comment="Count" Bounds="574,282,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VtUSwy9u4d7LNbQri8i2di" Comment="Count" Bounds="516,301,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1546,253,25,19" Id="TJ14gYaZz4VLRjmU3U7HVa">
             <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
