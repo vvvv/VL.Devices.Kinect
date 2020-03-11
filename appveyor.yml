@@ -1,0 +1,29 @@
+environment:
+  nuget_api_key:
+    secure: z98f5lVdBCMpPUE4tKf/vT1VKE6TShLwopXVtTruw9LBykiBL81abf8tQqXKPZpN
+
+version: 0.1.{build}
+
+assembly_info: 
+  assembly_version: "0.1.{build}-alpha"
+
+build_script:
+  - nuget pack appveyor\VL.Devices.Kinect.nuspec -Version %APPVEYOR_BUILD_VERSION%-alpha
+  - nuget setApiKey %nuget_api_key%
+  - nuget push VL.Devices.Kinect.%APPVEYOR_BUILD_VERSION%-alpha.nupkg -Source https://api.nuget.org/v3/index.json
+
+artifacts:
+  - path: '*.nupkg'
+    type: NuGetPackage
+
+branches:
+  only:
+    - master
+
+notifications:
+- provider: Email
+  to:
+    - hello@chau-nguyen.de
+  subject: 'VL.Devices.Kinect Build {{status}}'
+  message: "{{message}}, {{commidId}}, ..."
+  on_build_status_changed: true
