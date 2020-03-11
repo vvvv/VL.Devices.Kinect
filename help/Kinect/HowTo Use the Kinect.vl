@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2019.2.0-0314-d4039e4adc" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0314-gd4039e4adc" />
+<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2019.2.0-0322-884303c9a3" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2019.2.0-0322-g884303c9a3" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -106,7 +106,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="571,266,16,19" Id="GV57AisPfJPPGpAxATecXK">
-            <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RGB" />
             </p:NodeReference>
@@ -118,7 +118,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="GAx45ZfYmWKOn1QcsZJeAS" Name="Bounds" Kind="InputPin" DefaultValue="689, 60, 704, 564">
+            <Pin Id="GAx45ZfYmWKOn1QcsZJeAS" Name="Bounds" Kind="InputPin" DefaultValue="688, 60, 704, 564">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -164,9 +164,9 @@
             <Pin Id="HHJHHb01LbTOT60nEisSiL" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="363,269,44,19" Id="O0tPpc9hTH7Pg46fV5SOti">
-            <p:NodeReference LastCategoryFullName="Main.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Depth" />
+              <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
             <Pin Id="SlIpzlo3JHPMV6Ojtvg6zT" Name="Kinect" Kind="InputPin" />
             <Pin Id="SFmlBQiLsMnNYPBNqVK6w8" Name="Depth" Kind="OutputPin" />
@@ -191,9 +191,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0314-gd4039e4adc" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2019.2.0-0322-g884303c9a3" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.0.0.0" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0314-gd4039e4adc" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2019.2.0-0322-g884303c9a3" />
   <NugetDependency Id="PfhIaXpEVDqLLjb0dBLzbl" Location="VL.Skia3d" Version="0.0.0.0" />
   <PlatformDependency Id="RY37kBCv1egL3MFIz7WVCv" Location="../../lib/Microsoft.Kinect.Toolkit.FaceTracking.dll" />
 </Document>
