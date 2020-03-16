@@ -14,8 +14,6 @@
     <tags>VL, Kinect, skeleton, camera, video, depth, body, face, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
-      <dependency id="Microsoft.Kinect" version="[1.8.0.595]" />
-      <dependency id="Microsoft.Kinect.Toolkit" version="[1.8.0.572]" />
     </dependencies>
   </metadata>
   <files>
