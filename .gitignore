@@ -1,2 +1,4 @@
 .vl/*
+help/Kinect/.vl/*
 *.pdb
+.vs/*
