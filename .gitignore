@@ -2,3 +2,4 @@
 help/Kinect/.vl/*
 *.pdb
 .vs/*
+*.nupkg
