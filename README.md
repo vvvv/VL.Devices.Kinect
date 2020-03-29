@@ -4,11 +4,9 @@ Set of nodes to use Microsoft's Kinect 1 with vvvv gamma.
 
 ## Requirements
 
-Make sure to use [vvvv gamma 2019.2](https://vvvv.org/blog/vvvv-gamma-2019.2-preview) >= preview 322
-
-You also need to install the official Kinect SDKs:
-
-- [Kinect for Windows SDK v1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
+There are 2 different versions of the Kinect 1 available. Depending on which you have it requires either of the following drivers:
+* Kinect v1: [Kinect for Windows Runtime v1.8](http://www.microsoft.com/en-us/download/details.aspx?id=40277)
+* Kinect "XBOX 360": [Kinect for Windows Runtime v1.8 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
 
 ## How to get VL.Devices.Kinect
 
