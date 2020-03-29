@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+	<VLDocument link="HowTo Use the Kinect.vl"/>
+	<VLDocument link="HowTo Visualize the skeleton I.vl"/>
+	<VLDocument link="HowTo Visualize the skeleton II.vl"/>
+	<VLDocument link="HowTo Track Faces.vl"/>
+	<VLDocument link="HowTo Visualize the player IDs.vl"/>
+	<VLDocument link="HowTo Visualize the depth as a pointcloud.vl"/>
+</Pack>
