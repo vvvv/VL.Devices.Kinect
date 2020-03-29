@@ -159,11 +159,6 @@
               <Choice Kind="TypeFlag" Name="SkeletonTrackingMode" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BfqWgMjn5gmOXvUsJcUqnn" Comment="Elevation Angle" Bounds="220,414,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="J3Um8PwRSmtPyqBH9DMhHK" Comment="Device Index" Bounds="200,372,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
@@ -216,6 +211,11 @@
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="GvwhxN0jO44PKDCrW86l7X" Comment="Elevation Angle" Bounds="220,417,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="MUmaRHgpij0N2mqiJtEUkU" Name="Create" />
         <Patch Id="E8EhmnPcyV3OuzWMEg1JEj" Name="Update" />
@@ -231,12 +231,12 @@
         <Link Id="UpDlhhtFbGeMT0gf2YLTvw" Ids="SFmlBQiLsMnNYPBNqVK6w8,ATsoktGRYj3Plus5ZdR8Qn" />
         <Link Id="R1KVH3FbFmsQQIkMwsZse2" Ids="NgFd2uBMiT0N3NRN40A4DG,SlIpzlo3JHPMV6Ojtvg6zT" />
         <Link Id="B2TpEE5o3EfLcROpz3FMVA" Ids="OlBLHaMFoU0Nyh5zaHJzT7,Q3CsFoQGJIcPS9LFzf9dY0" />
-        <Link Id="DhFiL6yLNgGNgv66gJ1Nn6" Ids="BfqWgMjn5gmOXvUsJcUqnn,KqMc9vj3lDfOhSSjuoThdY" />
         <Link Id="RfqRhMKDRZwQQPAL8kF4un" Ids="SRgH5Tpoq9lLGmVNtVMeyF,NavB6rHCLIuQdbyXSzT1Eq" />
         <Link Id="Gyo87pGpoQKPzwvpTPJqua" Ids="ORlfcI5ikC2N43pNxQf1nL,Az5L5MYvJcSPDwBmjPfPrS" />
         <Link Id="VflxZEpVziXMbUKlCxMt9k" Ids="UwT9eefqis8Lq0y6918Z8S,EeeCN3YjyPUN0DpmfedTw5" />
         <Link Id="V5bKlFlAkXuP0FI5Y8S7Bs" Ids="HEjQBfm8SptO80fDGe6P1R,GUcHHTzoONSMq8idtiZ5pC" />
         <Link Id="IVgpubHIgpIQTrjTFyzN0p" Ids="J3Um8PwRSmtPyqBH9DMhHK,RwUdyf8gPhvLqzUsNolhiY" />
+        <Link Id="CnFgmvwlHXiNxPt0h55GhN" Ids="GvwhxN0jO44PKDCrW86l7X,KqMc9vj3lDfOhSSjuoThdY" />
       </Patch>
     </Node>
   </Patch>
