@@ -20,7 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
-            <Pin Id="T6spAahH1N7M0lRSH2yQax" Name="Index" Kind="InputPin" />
+            <Pin Id="T6spAahH1N7M0lRSH2yQax" Name="Device Index" Kind="InputPin" />
             <Pin Id="KqMc9vj3lDfOhSSjuoThdY" Name="Elevation Angle" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2020.1.0-0010-7bdc775461" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0-0010-g7bdc775461" />
+<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2020.1.0-0041-23922295bf" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0-0041-g23922295bf" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -160,12 +160,12 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="334,239,43,19" Id="TlXiAS5owKFNBqNqa7P4ns">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Player" />
             </p:NodeReference>
-            <Pin Id="UT3cRYHVBd4LP3iCHu0Igz" Name="Kinect" Kind="InputPin" />
-            <Pin Id="Jhps2tBdyObP0h20VHJSMt" Name="PlayerID" Kind="OutputPin" />
+            <Pin Id="UT3cRYHVBd4LP3iCHu0Igz" Name="Input" Kind="InputPin" />
+            <Pin Id="Jhps2tBdyObP0h20VHJSMt" Name="Player IDs" Kind="OutputPin" />
             <Pin Id="QAFlUxEtdGqPo5F2YfIhfQ" Name="Player Count" Kind="OutputPin" />
           </Node>
           <Node Bounds="280,818,145,19" Id="SoC6L2Ix9y8O10pAnmcDxy">
@@ -228,14 +228,15 @@
             <Pin Id="MIl6bsNtxorMNsuKiNlVcG" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="127,239,35,19" Id="Jyz83buopPDNblTwm3lu3e">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RGB" />
             </p:NodeReference>
+            <Pin Id="Nqr78pET8NxN70pZWVBJIU" Name="Input" Kind="InputPin" />
+            <Pin Id="BRkW6o5Is88NENSHpEzKQL" Name="Output" Kind="OutputPin" />
             <Pin Id="TodVlfN2godMNy6yr7u5Lr" Name="Kinect" Kind="InputPin" />
-            <Pin Id="A5OCIpsQcf8LELA3xqu9nP" Name="Color Image" Kind="OutputPin" />
           </Node>
-          <Node Bounds="127,340,67,26" Id="ShnxY80d7UoOevgDtB0SBL">
+          <Node Bounds="127,316,67,26" Id="ShnxY80d7UoOevgDtB0SBL">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromImage" />
@@ -278,11 +279,11 @@
             <Pin Id="Oz4ry1dJzS7OEPKPUnBLJ4" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="127,148,45,19" Id="NSB1sSbiJVwNZwXwXdxt5j">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
-            <Pin Id="IWqiskfKeCtNV2PaqRUeud" Name="Index" Kind="InputPin" />
+            <Pin Id="EJ8LDMWso5fLjoekS7TLug" Name="Device Index" Kind="InputPin" />
             <Pin Id="ANvw6CTB1ATL3mn4L2Ouwr" Name="Elevation Angle" Kind="InputPin" />
             <Pin Id="GzzFc9xOlE8OpNbtmpd3vM" Name="Skeleton Tracking Mode" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
@@ -354,7 +355,6 @@
         <Link Id="MiZtXGw1ixEQNVoypLI6MK" Ids="UGMq8NwIFhSNeLtY7x6sJ8,CySUXPW4nh1PTb0SYUO50i" />
         <Link Id="HfDGIRkBoneOursZn22zFX" Ids="OwnnJ1CFxipN1vQ1m5DutM,Onk1cMF4b2zMFeoqQoqs0I" />
         <Link Id="S7OvvEmLIu1MbnLiYAffjt" Ids="AFD1PbeIVScPhCUlIx2caS,H9DJZmixB8cMDIclbe1JLm" />
-        <Link Id="O1Ck1Lx2aGvPd9zWiuz1XA" Ids="A5OCIpsQcf8LELA3xqu9nP,LVzQblNFexlPwKqzAUB3oK" />
         <Link Id="FT7bnWxXwwKO9M3OcBtHAA" Ids="UjtFuMlXKU1MKYJdWFFgQp,IyaBN6BEbvKO4sA48ohXXI" />
         <Link Id="VljY01iIRTuNcALCHDOEfg" Ids="GkIw77qrkMtPHsqZAPfrih,CbHRpg8jB9ZLAth1oEokZQ" />
         <Link Id="V4XlHvTebiHNLKYpDMHqa8" Ids="Oz4ry1dJzS7OEPKPUnBLJ4,VtF3qzLGeoBL2we70RH2iS" />
@@ -367,12 +367,14 @@
         <Link Id="HX3sDcd72qQOdsNmB44V0E" Ids="F1Oum3XvIW3MLRNFRXjpgG,Kl2AoYGr3zNPlAAxgVJ1vC" />
         <Link Id="ONGozhSMMPdM2gtqPKpavv" Ids="MIl6bsNtxorMNsuKiNlVcG,UNdc7xECtgJNxkCqHMbJ8y" />
         <Link Id="FjVn3shJIXSO8HVdJ5dOPt" Ids="JgvhggXCfUWMkKBaWOOSq0,UYK5JXUueltPvSuzupHKQd" />
+        <Link Id="E1wZbA2ypGgN1Mi6mMpSor" Ids="S9unqkC7sT3Pqav6vUhIMS,Nqr78pET8NxN70pZWVBJIU" />
+        <Link Id="IUljvHFqp23OlABeeiZoBo" Ids="BRkW6o5Is88NENSHpEzKQL,LVzQblNFexlPwKqzAUB3oK" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0-0010-g7bdc775461" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0-0041-g23922295bf" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0-0010-g7bdc775461" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0-0041-g23922295bf" />
   <NugetDependency Id="PfhIaXpEVDqLLjb0dBLzbl" Location="VL.Skia3d" Version="0.0.0.0" />
   <PlatformDependency Id="RY37kBCv1egL3MFIz7WVCv" Location="../../lib/Microsoft.Kinect.Toolkit.FaceTracking.dll" />
 </Document>

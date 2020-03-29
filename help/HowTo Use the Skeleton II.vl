@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="OKMdY1Xjni8MSTXCjm6Gpz" LanguageVersion="2020.1.0-0010-7bdc775461" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0-0010-g7bdc775461" />
+<Document xmlns:p="property" Id="OKMdY1Xjni8MSTXCjm6Gpz" LanguageVersion="2020.1.0-0041-23922295bf" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0-0041-g23922295bf" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -16,35 +16,35 @@
       <Patch Id="AWTKDThZ4wZOpPipoQFvDp">
         <Canvas Id="OxFa1i5lGTpN5Gws8t7T1C" CanvasType="Group">
           <Node Bounds="73,83,50,19" Id="UEMHejEpHKuQc3ficbTcF6">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
             </p:NodeReference>
-            <Pin Id="R9EQuezEhcrN5djZ538AzC" Name="Index" Kind="InputPin" />
+            <Pin Id="PMoB2yVoD3SNihm34e6WfK" Name="Device Index" Kind="InputPin" />
             <Pin Id="IzNUHJh2aYULt3BQoWa2io" Name="Elevation Angle" Kind="InputPin" />
             <Pin Id="DRejk0XP9zAPAXqea51cxC" Name="Skeleton Tracking Mode" Kind="InputPin" />
             <Pin Id="MQUFGwtmVBOQJUTNqJRSkH" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="248,146,105,19" Id="IEbxdipkmDNMptlznY4cBt">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+          <Node Bounds="147,144,105,19" Id="IEbxdipkmDNMptlznY4cBt">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Skeleton" />
             </p:NodeReference>
-            <Pin Id="UqB2eEoFBUTMtkoXg4RejX" Name="Kinect" Kind="InputPin" />
+            <Pin Id="Ejlw8QGWNmvQMZZ1pXBJ7M" Name="Input" Kind="InputPin" />
+            <Pin Id="PDD36akfXkoLcURt7z8zUf" Name="Skeletons" Kind="OutputPin" />
             <Pin Id="DBbyF2Ph2EWL7WWqOl6Uj1" Name="Count" Kind="OutputPin" />
-            <Pin Id="PWEG2dEYFcEM5gBTLOSETf" Name="Tracking Ids" Kind="OutputPin" />
+            <Pin Id="QBmYgnjoRYiN1XrDKSBzeK" Name="Tracking IDs" Kind="OutputPin" />
             <Pin Id="SlTTsMPaDAcPAXBwLycPoO" Name="Skeleton Positions" Kind="OutputPin" />
             <Pin Id="HCrWIYoNisDNFojYI8i4HG" Name="Joints" Kind="OutputPin" />
             <Pin Id="ChDjPCT7zAdMpIy7ZWVLbv" Name="Bones" Kind="OutputPin" />
-            <Pin Id="E6iyc3DLo8kPgx8HClvKDV" Name="RawSkeletons" Kind="OutputPin" />
           </Node>
           <Node Bounds="73,146,35,19" Id="SF2g3XVVZzJMD3BdwAJ7FB">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RGB" />
             </p:NodeReference>
-            <Pin Id="PmKpXyyI5GULk1VkSiLsAA" Name="Kinect" Kind="InputPin" />
-            <Pin Id="QfBHZp745wyPfb5ctd0fQf" Name="Color Image" Kind="OutputPin" />
+            <Pin Id="QanbanhGfcINiPF74tHbAa" Name="Input" Kind="InputPin" />
+            <Pin Id="OcB7AnLXhNGOyLa8haQnlq" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="73,743,67,26" Id="TkNnhAH31EFPEZHvQVIlqX">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
@@ -114,7 +114,7 @@
                   <ControlPoint Id="JCKRENz3Z33PASWqypR1eK" Bounds="868,343" />
                   <ControlPoint Id="RluVvK2Z9f0M9oz3pNHVOl" Bounds="875,395" />
                   <Node Bounds="873,359,128,19" Id="BAqGaO2LZQ7MXbNRFJWviq">
-                    <p:NodeReference LastCategoryFullName="Main.Joint" LastSymbolSource="VL.Devices.Kinect.vl">
+                    <p:NodeReference LastCategoryFullName="Devices.Kinect.Joint" LastSymbolSource="VL.Devices.Kinect.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="JointTrackingStateEquals" />
                     </p:NodeReference>
@@ -164,7 +164,7 @@
                   <ControlPoint Id="GZJUWGpuEBWNAyuxY6PlxP" Bounds="1076,344" />
                   <ControlPoint Id="EA0M79rtqViPq57jZbv7vU" Bounds="1078,394" />
                   <Node Bounds="1079,359,128,19" Id="CgCRq8dpQAGPBuyRfwH9Yx">
-                    <p:NodeReference LastCategoryFullName="Main.Joint" LastSymbolSource="VL.Devices.Kinect.vl">
+                    <p:NodeReference LastCategoryFullName="Devices.Kinect.Joint" LastSymbolSource="VL.Devices.Kinect.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="JointTrackingStateEquals" />
                     </p:NodeReference>
@@ -457,7 +457,7 @@
           </Pad>
           <Pad Id="VtUSwy9u4d7LNbQri8i2di" Comment="Count" Bounds="161,243,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1295,146,35,19" Id="TJ14gYaZz4VLRjmU3U7HVa">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.Devices.Kinect.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FOV" />
             </p:NodeReference>
@@ -491,7 +491,7 @@
                   <ControlPoint Id="ECo5Gv7dPVRL3tsjE2qWnP" Bounds="280,357" />
                   <ControlPoint Id="I3y3LISd5YUPwmdPKPZObD" Bounds="280,437" />
                   <Node Bounds="291,393,130,19" Id="SFUZqNoo7oENlkygGqHt4u">
-                    <p:NodeReference LastCategoryFullName="Main.Bone" LastSymbolSource="VL.Devices.Kinect.vl">
+                    <p:NodeReference LastCategoryFullName="Devices.Kinect.Bone" LastSymbolSource="VL.Devices.Kinect.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="BoneTrackingStateEquals" />
                     </p:NodeReference>
@@ -541,7 +541,7 @@
                   <ControlPoint Id="HcdvBo89TSOP9MP7sRogK8" Bounds="505,355" />
                   <ControlPoint Id="BlGysQy4oJfPWnsS92ytDB" Bounds="505,435" />
                   <Node Bounds="516,391,130,19" Id="NqInPVDC8rmQREBS6cJUL2">
-                    <p:NodeReference LastCategoryFullName="Main.Bone" LastSymbolSource="VL.Devices.Kinect.vl">
+                    <p:NodeReference LastCategoryFullName="Devices.Kinect.Bone" LastSymbolSource="VL.Devices.Kinect.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="BoneTrackingStateEquals" />
                     </p:NodeReference>
@@ -612,9 +612,7 @@
           <Fragment Id="Cmcf4mHyB0EMdpDeZpxC9x" Patch="MUmaRHgpij0N2mqiJtEUkU" Enabled="true" />
           <Fragment Id="DfmSNg5hyLHLzdFhxmY8xo" Patch="E8EhmnPcyV3OuzWMEg1JEj" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="Ctp5Tl9SQAkOuWeudRxGz6" Ids="MQUFGwtmVBOQJUTNqJRSkH,PmKpXyyI5GULk1VkSiLsAA" />
         <Link Id="HJlKbusS1iGMFuJuVpGQrK" Ids="LWvareNTv24MyK61RT8NJT,BFCLFcyP6rQQFh7fWimg8P" />
-        <Link Id="VpCBQOmhakSNTJXJODItTw" Ids="QfBHZp745wyPfb5ctd0fQf,Kp86w2UY9fKPQMUnQ8toSh" />
         <Link Id="T81NdWceQdsN9bc6s0pcZF" Ids="HCrWIYoNisDNFojYI8i4HG,DIwwtgi1GrNMi8hScuM73a" />
         <Link Id="GwWpQFoT8vzO3E0jOgQxrw" Ids="UZXuX9VZJ3jNebYXvm7L3I,Pn9pbxse5OQLpxEOtkym6g" />
         <Link Id="DcFQgv9acHALFghzXO6Mr1" Ids="AmBRlZ2pLrANwjsftaCmBo,DakIzJVd8iSLfzgvH1qqpB" />
@@ -639,7 +637,6 @@
         <Link Id="BH5kiyPQ5TfNWYM6gW1RH8" Ids="EXlmIh5DoNmNJ3kcdAiB80,O8OgoW1wZ9SNO7EpNxIhek" />
         <Link Id="DIpoThZ1tdGOCIQoHhtgWu" Ids="SBCdyEaHQEhOKydLZyYkJN,IKRHklZV9KdOopZmt70n3x" />
         <Link Id="DfEXMUpR1itPNYTcBGDira" Ids="IiGLGlfzaVVNhcU2dp97YS,G9jV1xsI6BBLK86MLUWNV1" />
-        <Link Id="IavxqGFGdavLfDgYr6gnLC" Ids="MQUFGwtmVBOQJUTNqJRSkH,UqB2eEoFBUTMtkoXg4RejX" />
         <Link Id="PgrmI5eDkx3M4sVyIFtfAh" Ids="Jx11Q6HYxjZL5m7jQ0ibJX,J6GniKhr2tYOifYuGm1aYX" />
         <Link Id="JxojFEZQW4LPHzgk2l6l5O" Ids="DBbyF2Ph2EWL7WWqOl6Uj1,VtUSwy9u4d7LNbQri8i2di" />
         <Link Id="UevtGxKwxjHMabph0y2Xqv" Ids="CIrTEtZgJblQAuDQmV3KHh,EXheSvQU4edOCiOt5sIIUy" />
@@ -692,11 +689,14 @@
         <Link Id="ImekwBD9szVPJ6OCyQpYig" Ids="IQlR4D7efYhP9vwQx3KkEV,GUBxh3KUXIWQMhxss6B3JY" />
         <Link Id="U95lujDk8PCL5z9NSK0dVp" Ids="C8gIr9URWppNWHcuBgwmnm,RKhLMiVNqi6LCuGxe76obq" />
         <Link Id="AEdnJsdxwpZPq1wF9YcTRS" Ids="EicxTFBz5mdLayOsTfaR7D,ErA6bLlIl23ODoajwOIpgJ" />
+        <Link Id="LzjesqPY0CFLbERj5s96U7" Ids="MQUFGwtmVBOQJUTNqJRSkH,QanbanhGfcINiPF74tHbAa" />
+        <Link Id="OyhEzROS1a0PseI5UeOrbi" Ids="OcB7AnLXhNGOyLa8haQnlq,Kp86w2UY9fKPQMUnQ8toSh" />
+        <Link Id="Eki6wOaVnamMItyy3R3Rfe" Ids="MQUFGwtmVBOQJUTNqJRSkH,Ejlw8QGWNmvQMZZ1pXBJ7M" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0-0010-g7bdc775461" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0-0041-g23922295bf" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0-0010-g7bdc775461" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0-0041-g23922295bf" />
   <NugetDependency Id="K5cdkp8zAgDNE5PyP4c7Da" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>
