@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2020.1.0-0041-23922295bf" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0-0041-g23922295bf" />
+<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -98,9 +98,9 @@
           <Node Bounds="198,578,35,19" Id="GV57AisPfJPPGpAxATecXK">
             <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RGB" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
-            <Pin Id="GBY1ib2Y6M2OmBl41xzlJe" Name="Input" Kind="InputPin" />
+            <Pin Id="M62C3J9mgGVMjD0cWY57He" Name="Device" Kind="InputPin" />
             <Pin Id="QAmSZjZ38PENyIoRE6DdaX" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="178,774,145,19" Id="AEdKCBW7mDHLZZ31z14GDu">
@@ -133,7 +133,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
-            <Pin Id="SlIpzlo3JHPMV6Ojtvg6zT" Name="Input" Kind="InputPin" />
+            <Pin Id="C24mK83BN8eMR7Nib5xHaU" Name="Device" Kind="InputPin" />
             <Pin Id="SFmlBQiLsMnNYPBNqVK6w8" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="SGByfcSqJ6BOqWObZSHJlA" Bounds="61,182,287,11" ShowValueBox="true" isIOBox="true" Value="Kinect v1: Kinect for Windows Runtime v1.8">
@@ -227,9 +227,7 @@
         <Link Id="MNAnYdhzzEtL8njrd7o4su" Ids="Cnst7n1CPzYPt9eWoH23XG,Kkg4D8gtkooLBdPaw7nQR3" />
         <Link Id="SmSUn076oKbNsD8GIcHij7" Ids="QAmSZjZ38PENyIoRE6DdaX,SOlJyD3TSOdLNAj9fbmP8l" />
         <Link Id="NJKiYeOxDXYPXA5sAhua6u" Ids="M4VNTQQYOjYPffin84iRSA,NpacDRRmFHIPMmHCXvMYUf" />
-        <Link Id="TUcyRduryFcNvzWeKjkvb2" Ids="NgFd2uBMiT0N3NRN40A4DG,GBY1ib2Y6M2OmBl41xzlJe" />
         <Link Id="UpDlhhtFbGeMT0gf2YLTvw" Ids="SFmlBQiLsMnNYPBNqVK6w8,ATsoktGRYj3Plus5ZdR8Qn" />
-        <Link Id="R1KVH3FbFmsQQIkMwsZse2" Ids="NgFd2uBMiT0N3NRN40A4DG,SlIpzlo3JHPMV6Ojtvg6zT" />
         <Link Id="B2TpEE5o3EfLcROpz3FMVA" Ids="OlBLHaMFoU0Nyh5zaHJzT7,Q3CsFoQGJIcPS9LFzf9dY0" />
         <Link Id="RfqRhMKDRZwQQPAL8kF4un" Ids="SRgH5Tpoq9lLGmVNtVMeyF,NavB6rHCLIuQdbyXSzT1Eq" />
         <Link Id="Gyo87pGpoQKPzwvpTPJqua" Ids="ORlfcI5ikC2N43pNxQf1nL,Az5L5MYvJcSPDwBmjPfPrS" />
@@ -237,9 +235,11 @@
         <Link Id="V5bKlFlAkXuP0FI5Y8S7Bs" Ids="HEjQBfm8SptO80fDGe6P1R,GUcHHTzoONSMq8idtiZ5pC" />
         <Link Id="IVgpubHIgpIQTrjTFyzN0p" Ids="J3Um8PwRSmtPyqBH9DMhHK,RwUdyf8gPhvLqzUsNolhiY" />
         <Link Id="CnFgmvwlHXiNxPt0h55GhN" Ids="GvwhxN0jO44PKDCrW86l7X,KqMc9vj3lDfOhSSjuoThdY" />
+        <Link Id="AaIOrz49OllLtNz53MzU3r" Ids="NgFd2uBMiT0N3NRN40A4DG,M62C3J9mgGVMjD0cWY57He" />
+        <Link Id="Ho74JoG3Yc5OVzp2DA6P64" Ids="NgFd2uBMiT0N3NRN40A4DG,C24mK83BN8eMR7Nib5xHaU" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0-0041-g23922295bf" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
 </Document>

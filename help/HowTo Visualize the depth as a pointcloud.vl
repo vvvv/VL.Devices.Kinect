@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2020.1.0-0041-23922295bf" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0-0041-g23922295bf" />
+<Document xmlns:p="property" Id="BsInaGFkoyVL8lqY9DMHLd" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -38,7 +38,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="LrEgtYNaN5IMKVY3uRkivs" Name="Bounds" Kind="InputPin" DefaultValue="1023, 54, 768, 580">
+            <Pin Id="LrEgtYNaN5IMKVY3uRkivs" Name="Bounds" Kind="InputPin" DefaultValue="1140, 48, 768, 580">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -63,7 +63,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloud" />
             </p:NodeReference>
-            <Pin Id="MTfueZSFwhtMPXREuQTJei" Name="Input" Kind="InputPin" />
+            <Pin Id="MTfueZSFwhtMPXREuQTJei" Name="Device" Kind="InputPin" />
             <Pin Id="NFl4D6QLRYHQC0Br0YkhYx" Name="Minimum Z" Kind="InputPin" />
             <Pin Id="LFHd3HAGtSFPV7NaS4KQIL" Name="Maximum Z" Kind="InputPin" />
             <Pin Id="OarpwuVGJiOOC3I40DUwUQ" Name="Decimation" Kind="InputPin" />
@@ -79,7 +79,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LrFZOcbwqlALZ9IZwBLmLn" Comment="Decimation" Bounds="274,293,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="LrFZOcbwqlALZ9IZwBLmLn" Comment="Decimation" Bounds="274,293,35,15" ShowValueBox="true" isIOBox="true" Value="4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -190,8 +190,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0-0041-g23922295bf" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0-0041-g23922295bf" />
+  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0" />
   <NugetDependency Id="PfhIaXpEVDqLLjb0dBLzbl" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>
