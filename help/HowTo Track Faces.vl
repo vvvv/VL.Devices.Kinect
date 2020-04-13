@@ -264,5 +264,4 @@
   </Patch>
   <NugetDependency Id="Pyn9zsQ56eqOJdKVLCiNtC" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="HaaRcZ0ZjkwOmJebHbaN69" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
-  <PlatformDependency Id="Gb7GNKhPZNtQDVmCzOq1fq" Location="Microsoft.Kinect" />
 </Document>
