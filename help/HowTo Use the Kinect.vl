@@ -173,7 +173,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FFPRiHX6A38PELVVLs3by7" Bounds="64,250,357,13" ShowValueBox="true" isIOBox="true" Value="Kinect &quot;XBOX 360&quot;: Kinect for Windows Runtime v1.8 SDK">
+          <Pad Id="FFPRiHX6A38PELVVLs3by7" Bounds="64,250,357,13" ShowValueBox="true" isIOBox="true" Value="Kinect &quot;XBOX 360&quot;: Kinect for Windows v1.8 SDK">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -211,7 +211,7 @@
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GvwhxN0jO44PKDCrW86l7X" Comment="Elevation Angle" Bounds="220,417,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
+          <Pad Id="GvwhxN0jO44PKDCrW86l7X" Comment="Elevation Angle" Bounds="220,414,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>

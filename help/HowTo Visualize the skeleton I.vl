@@ -176,12 +176,11 @@
         <Link Id="QWs6Ta4MAPNLxlPyKxKiRJ" Ids="MaBuiHjvKgANDGiOBj3UCn,DIwwtgi1GrNMi8hScuM73a" />
         <Link Id="Do7enKy59KSPluErLdifHN" Ids="V1G6YsqkBiJOQEHtdEqd7G,JWgvvcYP9KfMbDExr6n2nS" />
         <Link Id="SchC0cYEWdML8DA68frTgT" Ids="T0Y5w1Vk5qsNMIj64SPyFB,IIqjsEKwp3rMur9Yv0H3Xi" />
-        <Link Id="UJW8IOeQv5eMldQUxgtB8S" Ids="UudupyqJ91eOAEi2y7JmvE,PpHwTLI0oiwQYlG778AIuA" />
+        <Link Id="JoxLL4Ub8wMNBx6qTjF3dR" Ids="UudupyqJ91eOAEi2y7JmvE,PpHwTLI0oiwQYlG778AIuA" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0" />
   <NugetDependency Id="K5cdkp8zAgDNE5PyP4c7Da" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>

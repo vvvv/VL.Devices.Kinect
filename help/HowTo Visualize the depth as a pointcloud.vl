@@ -144,7 +144,7 @@
             </p:NodeReference>
             <Pin Id="HwU79vOjwYWPlji70AAwTd" Name="Input" Kind="InputPin" />
             <Pin Id="LP5XBtcJcqOMDcY8pTKuCO" Name="Initial Interest" Kind="InputPin" />
-            <Pin Id="QeICOW5hkWaMUGATtEXVng" Name="Initial Yaw" Kind="InputPin" DefaultValue="-0.5">
+            <Pin Id="QeICOW5hkWaMUGATtEXVng" Name="Initial Yaw" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -192,6 +192,5 @@
   </Patch>
   <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
-  <NugetDependency Id="JuzmZevWhdFPaYZlENAidp" Location="VL.EditingFramework" Version="2020.1.0" />
   <NugetDependency Id="PfhIaXpEVDqLLjb0dBLzbl" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>
