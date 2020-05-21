@@ -1,21 +1,19 @@
 # VL.Devices.Kinect
+Set of nodes to use Microsoft's Kinect 1 with VL.
 
-Set of nodes to use Microsoft's Kinect 1 with vvvv gamma.
+Try it with vvvv, the visual live-programming environment for .NET
+Download: http://visualprogramming.net
 
 ## Requirements
-
 There are 2 different versions of the Kinect 1 available. Depending on which you have it requires either of the following drivers:
 * Kinect v1: [Kinect for Windows Runtime v1.8](http://www.microsoft.com/en-us/download/details.aspx?id=40277)
 * Kinect "XBOX 360": [Kinect for Windows Runtime v1.8 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
 
-## How to get VL.Devices.Kinect
+## Using the library
+In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
 
-```
-nuget install VL.Devices.Kinect -prerelease
-```
+    nuget install VL.Devices.Kinect -pre
 
-Read the greybook on how to [manage nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) for more help.
+Once the VL.Devices.Kinect nuget is installed and referenced in your VL document you'll see the category "Kinect" under "Devices" in the nodebrowser. 
 
-Then, you can find help patches with `F1 > Kinect` or in `VL.Devices.Kinect/help/Kinect`.
-
-Please leave feedback, questions, comments in issues or in the vvvv forum.
+Demos are available via the Help Browser!

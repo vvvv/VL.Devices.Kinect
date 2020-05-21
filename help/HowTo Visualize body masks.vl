@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="A18NyYJn4UyLIKYXOK0IeZ" LanguageVersion="2020.1.2.125" Version="0.128">
+  <NugetDependency Id="FfravsnDOnDMtc3nsgCbUL" Location="VL.CoreLib" Version="2020.1.2-0122-ga74ffb9640" />
   <Patch Id="FlEtN0UmSC4MzZkyp0M8fg">
     <Canvas Id="QtqnzIMEuLEMoI3cAOuhyr" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -163,11 +163,12 @@
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="437,241,66,19" Id="TlXiAS5owKFNBqNqa7P4ns">
+          <Node Bounds="434,241,66,19" Id="TlXiAS5owKFNBqNqa7P4ns">
             <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="BodyImage" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IHNYwWRX5DPNaltN3YEcwW" Name="Device" Kind="InputPin" />
             <Pin Id="Jhps2tBdyObP0h20VHJSMt" Name="Output" Kind="OutputPin" />
           </Node>
@@ -280,7 +281,7 @@
             <Pin Id="CbHRpg8jB9ZLAth1oEokZQ" Name="Input 2" Kind="InputPin" />
             <Pin Id="Oz4ry1dJzS7OEPKPUnBLJ4" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="127,148,45,19" Id="NSB1sSbiJVwNZwXwXdxt5j">
+          <Node Bounds="100,142,45,19" Id="NSB1sSbiJVwNZwXwXdxt5j">
             <p:NodeReference LastCategoryFullName="Devices.Kinect" LastSymbolSource="VL.Devices.Kinect.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Kinect" />
@@ -356,6 +357,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="PZV6I1TZQJRNTLQa5ZR0tV" Location="VL.Skia" Version="2020.1.2-0122-ga74ffb9640" />
   <NugetDependency Id="UpKxGZy1kSEQHARWmBb6yW" Location="VL.Devices.Kinect" Version="0.1.9-alpha" />
 </Document>
