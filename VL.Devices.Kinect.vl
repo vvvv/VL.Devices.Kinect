@@ -4633,7 +4633,7 @@
               </Node>
               <ControlPoint Id="VHkIq7uKLvMPYaW8Wz27dB" Bounds="447,217" />
               <ControlPoint Id="GQbeKvyU7BCNtHnd9EeHir" Bounds="344,842" />
-              <Node Bounds="639,352,120,26" Id="QE2giS8eK6DMvthjIdYqAa">
+              <Node Bounds="663,288,120,26" Id="QE2giS8eK6DMvthjIdYqAa">
                 <p:NodeReference LastCategoryFullName="Devices.Kinect.Kinect" LastSymbolSource="VL.Devices.KinectGH.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Kinect" />
@@ -4643,7 +4643,7 @@
                 <Pin Id="AccDoLdeW1gPAW0QRkfMB6" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="IHdvU0jo5zgLYc2PTKWCss" Name="Color Image" Kind="OutputPin" />
               </Node>
-              <Node Bounds="669,387,65,19" Id="KWTrPJDMEmWOwxEiWY0Mrx">
+              <Node Bounds="693,323,65,19" Id="KWTrPJDMEmWOwxEiWY0Mrx">
                 <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -4653,16 +4653,44 @@
                 <Pin Id="Jn8Z6TOpi76M8kIw15JSBK" Name="Value" Kind="OutputPin" />
                 <Pin Id="AwbY3J5h42oLPLtyNkIpVP" Name="On Data" Kind="OutputPin" />
               </Node>
-              <Node Bounds="669,415,79,26" Id="KfUnpVg3udaQVRLQk3m7LQ">
-                <p:NodeReference LastCategoryFullName="Microsoft.Kinect.ColorImageFrame" LastSymbolSource="Microsoft.Kinect.dll">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="AssemblyCategory" Name="ColorImageFrame" />
-                  <Choice Kind="OperationCallFlag" Name="Format" />
+              <Node Bounds="720,398,103,80" Id="VbPtegJjazHMciAG52BEkc">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
                 </p:NodeReference>
-                <Pin Id="P8IEjVFrEhjLJ8y0wxG1RH" Name="Input" Kind="StateInputPin" />
-                <Pin Id="Hl95mNTD59tLtzS2AvhBm7" Name="Output" Kind="StateOutputPin" />
-                <Pin Id="S5JaThafevpLDyzT55na19" Name="Format" Kind="OutputPin" />
+                <Pin Id="JIpkrOc72SxOi4CwOQ55hi" Name="Condition" Kind="InputPin" />
+                <Patch Id="GEh9E1OdVEnMm5FhzOpRof" ManuallySortedPins="true">
+                  <Patch Id="Em3lE58WkNcMDsOHsz1qq8" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="USBXZiMYDPeQYaOdQa8IAG" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="732,427,79,26" Id="KfUnpVg3udaQVRLQk3m7LQ">
+                    <p:NodeReference LastCategoryFullName="Microsoft.Kinect.ColorImageFrame" LastSymbolSource="Microsoft.Kinect.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="ColorImageFrame" />
+                      <Choice Kind="OperationCallFlag" Name="Format" />
+                    </p:NodeReference>
+                    <Pin Id="P8IEjVFrEhjLJ8y0wxG1RH" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Hl95mNTD59tLtzS2AvhBm7" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="S5JaThafevpLDyzT55na19" Name="Format" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="O3BM50x8DeELFkcdEtIN6O" Bounds="791,472" Alignment="Bottom" />
+                <ControlPoint Id="O3qSVipqOw2LSgiNRLF3VY" Bounds="791,404" Alignment="Top" />
               </Node>
+              <Node Bounds="701,358,65,19" Id="D2EC1I9Ckj5LAXJEvZluRR">
+                <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                </p:NodeReference>
+                <Pin Id="LeKNi15LMe1PKEeX1FSo4s" Name="X" Kind="InputPin" />
+                <Pin Id="JCJbeJbdvQFPgojwkXxfiP" Name="Result" Kind="OutputPin" />
+                <Pin Id="LtmLrWwpgrfLJrgJcAZ54R" Name="Not Assigned" Kind="OutputPin" />
+              </Node>
+              <Pad Id="IXnNLJSHZcMMxdwIdkk0Mm" Comment="" Bounds="799,336,193,15" ShowValueBox="true" isIOBox="true" Value="RgbResolution640x480Fps30">
+                <p:TypeAnnotation LastCategoryFullName="Microsoft.Kinect" LastSymbolSource="Microsoft.Kinect.dll">
+                  <Choice Kind="TypeFlag" Name="ColorImageFormat" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <Patch Id="Rp6q34gOf7qLhNkTrp2NUG" Name="Create" />
             <Patch Id="PkjSXp3c8qBOD1NSE9VpMx" Name="Update">
@@ -4699,7 +4727,12 @@
             <Link Id="BKUVAmEtfZgPfT32XwMHXK" Ids="FWiUj2PpcE2NPSQOjpjrUK,O3ZSgdix3ixQPrqGjiBHQR" />
             <Link Id="E8wClsnPBngP64Q6TWJk7p" Ids="IHdvU0jo5zgLYc2PTKWCss,IYXBfscg7YNLlWJqCv2uEF" />
             <Link Id="CqQfKVsXETuNPshpztuepz" Ids="Jn8Z6TOpi76M8kIw15JSBK,P8IEjVFrEhjLJ8y0wxG1RH" />
-            <Link Id="QHGLDH2lhuLL7AICWkOwV8" Ids="S5JaThafevpLDyzT55na19,PiIZNtHv7qUMKXzpbHQnes" />
+            <Link Id="DP8pAPpNKmnLLUIHs6aPd5" Ids="Jn8Z6TOpi76M8kIw15JSBK,LeKNi15LMe1PKEeX1FSo4s" />
+            <Link Id="N5M8W8qmsEvMOLKgakp3WX" Ids="JCJbeJbdvQFPgojwkXxfiP,JIpkrOc72SxOi4CwOQ55hi" />
+            <Link Id="PBy66kbODxZQG6CI4JPm04" Ids="O3qSVipqOw2LSgiNRLF3VY,O3BM50x8DeELFkcdEtIN6O" IsFeedback="true" />
+            <Link Id="SU0G8XWrn8DPxvVqTAPKJ1" Ids="S5JaThafevpLDyzT55na19,O3BM50x8DeELFkcdEtIN6O" />
+            <Link Id="Q53MtgYcubkNwdtf4FtnSa" Ids="O3BM50x8DeELFkcdEtIN6O,PiIZNtHv7qUMKXzpbHQnes" />
+            <Link Id="Kx98FuXJuo9QCTNVkM0Rqq" Ids="IXnNLJSHZcMMxdwIdkk0Mm,O3qSVipqOw2LSgiNRLF3VY" />
           </Patch>
         </Node>
       </Canvas>
@@ -6368,8 +6401,8 @@
                           <p:OuterCategoryReference Kind="Category" Name="Skia3d" NeedsToBeDirectParent="true" />
                         </CategoryReference>
                       </p:NodeReference>
-                      <Pin Id="C4AATBjqO4CN7ufDLKj2I7" Name="Input" Kind="InputPin" />
                       <Pin Id="BRuQEj3xE8sMXnfCr0D6v8" Name="Transform" Kind="InputPin" />
+                      <Pin Id="C4AATBjqO4CN7ufDLKj2I7" Name="Input" Kind="InputPin" />
                       <Pin Id="LC5qog5vM50PN1Q4flyedt" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1200,567,58,19" Id="IZ2OkXYioprLzvmegFREKH">
@@ -6441,8 +6474,8 @@
                           <p:OuterCategoryReference Kind="Category" Name="Skia3d" NeedsToBeDirectParent="true" />
                         </CategoryReference>
                       </p:NodeReference>
-                      <Pin Id="QjN3MYOX8C2L6XraFM5fY7" Name="Input" Kind="InputPin" />
                       <Pin Id="UQJe2LqtO4vQBdEPCVIIb2" Name="Transform" Kind="InputPin" />
+                      <Pin Id="QjN3MYOX8C2L6XraFM5fY7" Name="Input" Kind="InputPin" />
                       <Pin Id="IE2ixHi9nlhNhgPnYA6JPg" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1601,576,58,19" Id="A2yZDgGxcscLRg3qh5jydf">
@@ -6489,6 +6522,7 @@
                         </p:TypeAnnotation>
                       </Pin>
                       <Pin Id="Eol9C7mvNvoPqC3ROZpNHa" Name="Text" Kind="InputPin" />
+                      <Pin Id="PFuc47tYbEzMEn0bHCUbR2" Name="Enabled" Kind="InputPin" />
                       <Pin Id="Tc0tY14IFQsLSd3xcPufwv" Name="Family Name" Kind="InputPin" />
                       <Pin Id="LGz7yaEX56QLsICu5mSzMh" Name="Style" Kind="InputPin" />
                       <Pin Id="P3sAMESrneaMptAZpfYFyq" Name="Size" Kind="InputPin" DefaultValue="0.038">
@@ -6511,7 +6545,6 @@
                           <Choice Kind="TypeFlag" Name="VerticalTextAlignment" />
                         </p:TypeAnnotation>
                       </Pin>
-                      <Pin Id="PFuc47tYbEzMEn0bHCUbR2" Name="Enabled" Kind="InputPin" />
                       <Pin Id="M3FAo7KWCj4LeKZRx93ptt" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1531,582,55,19" Id="LIoynTUMrSFNmzwdTBkw9R">
