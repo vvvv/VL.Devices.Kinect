@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.2.125" Version="0.128">
-  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.2-0122-ga74ffb9640" />
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="APFBYc3ryadNMXCUycaQDK">
     <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -24,6 +24,11 @@
             <Pin Id="QzwbfNcJKQmQRLUT8wx7RK" Name="Device Index" Kind="InputPin" />
             <Pin Id="KmN91eaMTHLLT1xQ4QUiBS" Name="Elevation Angle" Kind="InputPin" />
             <Pin Id="SaBbvoK2BhZNHbfahJaqeL" Name="Skeleton Tracking Mode" Kind="InputPin" />
+            <Pin Id="PF8Tg3AuMgvP2M91E61HEm" Name="Enabled" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="K1Grrr2CgCdOjKwDlkBW7x" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="204,441,69,19" Id="BXZj28suNmNNzNSQj1yoZw">
@@ -299,9 +304,12 @@
         <Link Id="C5cw3FRaXKmM1e55oH9ef0" Ids="K1Grrr2CgCdOjKwDlkBW7x,NILDqPU4UBYNeIHVIgYCEK" />
         <Link Id="FJ4etZDYY7QMr37EEygsDB" Ids="Iw8yQKJv8jNPwlUq7oQrhP,UPU7ExUWMVRQVj5sn2neL4" />
         <Link Id="FK8VQY2KdJPMpSsaZE8njc" Ids="K1Grrr2CgCdOjKwDlkBW7x,C2H3tNJEN74PInzepWLxIf" />
+        <Link Id="JCEXF3UN6frMhwa0hrqofK" Ids="K1Grrr2CgCdOjKwDlkBW7x,PYgw79V4QSCMbhjKWDwGsW" />
+        <Link Id="QZZmfRVEZdSQCwqKjq7lLZ" Ids="K1Grrr2CgCdOjKwDlkBW7x,UyI3iqyZyF5QDEcUOO8WdF" />
+        <Link Id="T96g7grCJ45MmBEhUldNXn" Ids="K1Grrr2CgCdOjKwDlkBW7x,UOdEwjYj4q3LYL2611M1L7" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.2-0122-ga74ffb9640" />
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.3" />
   <NugetDependency Id="Vj2sfl9TmJnQARClRHufBC" Location="VL.Devices.Kinect" Version="0.0.0.0" />
 </Document>
