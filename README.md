@@ -1,7 +1,7 @@
 # VL.Devices.Kinect
 Set of nodes to use Microsoft's Kinect 1 with VL.
 
-Try it with vvvv, the visual live-programming environment for .NET
+Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
 
 ## Requirements
