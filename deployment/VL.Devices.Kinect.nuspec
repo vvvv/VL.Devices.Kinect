@@ -2,16 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Kinect</id>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <title>VL.Devices.Kinect</title>
-    <authors>vvvv, Chau Nguyen</authors>
+    <authors>Chau Nguyen, vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/chaupow/VL.Devices.Kinect</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>A VL wrapper for Microsoft Kinect v1</summary>
-    <description>Kinect for VL</description>
-    <copyright>Copyright © 2020 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, Kinect, skeleton, camera, video, depth, body, face, tracking</tags>
+    <summary>Kinect v1/XBO360 for vvvv</summary>
+    <description>Kinect v1/XBO360 for vvvv</description>
+    <tags>VL, Kinect, XBO360, camera, video, depth, skeleton, body, face, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
         <dependency id="VL.Skia3d" version="1.0.36-alpha" />
