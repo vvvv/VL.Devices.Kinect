@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.Kinect</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>VL.Devices.Kinect</title>
     <authors>Chau Nguyen, vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/chaupow/VL.Devices.Kinect</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Kinect v1/XBO360 for vvvv</summary>
-    <description>Kinect v1/XBO360 for vvvv</description>
-    <tags>VL, Kinect, XBO360, camera, video, depth, skeleton, body, face, tracking</tags>
+    <summary>Kinect v1/XBOX360 for vvvv</summary>
+    <description>Kinect v1/XBOX360 for vvvv</description>
+    <tags>VL, Kinect, XBOX360, camera, video, depth, skeleton, body, face, tracking</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
         <dependency id="VL.Skia3d" version="1.1.1" />
