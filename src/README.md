@@ -1,0 +1,1 @@
+.NET 6 compatible port of [Microsoft.Kinect (1.8.0.595)](https://www.microsoft.com/en-us/download/details.aspx?id=40277)

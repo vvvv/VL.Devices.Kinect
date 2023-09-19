@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <!--Project was exported from assembly: Microsoft.Kinect.dll-->
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Version>1.8.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>..\..\lib</OutputPath>
+    
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  
+</Project>
