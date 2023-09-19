@@ -18,7 +18,7 @@
 	<icon>icon\nugeticon.png</icon>
   </metadata>
   <files>
-    <file src="..\lib\**" target="lib" />
+    <file src="..\lib\net6.0-windows\*" target="lib\net6.0-windows7.0" />
     <file src="..\runtimes\**" target="runtimes" />
     <file src="..\*.vl" target="" />
     <file src="..\help\**" target="help" />
