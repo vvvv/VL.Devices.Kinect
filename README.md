@@ -1,5 +1,5 @@
 # VL.Devices.Kinect
-A package for using Microsoft's Kinect and Kinect XBOX 360 in VL.
+A package for using Kinect and Kinect XBOX 360 by Microsoft in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
