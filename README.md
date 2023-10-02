@@ -1,5 +1,5 @@
 # VL.Devices.Kinect
-Set of nodes to use Microsoft's Kinect 1 with VL.
+A package for using Microsoft's Kinect and Kinect XBOX 360 in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
