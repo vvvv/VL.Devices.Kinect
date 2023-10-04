@@ -19,4 +19,4 @@ Once the VL.Devices.Kinect nuget is installed and referenced in your VL document
 Demos are available via the Help Browser!
 
 ## Credits
-Initial development by @chaupow
+Initial development by [chaupow](https://github.com/chaupow).
